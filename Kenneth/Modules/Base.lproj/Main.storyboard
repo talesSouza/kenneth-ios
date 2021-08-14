@@ -119,7 +119,7 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo é dinheiro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aX-lc-JXd">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pague com cartão de crédito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aX-lc-JXd">
                                                                 <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
@@ -130,9 +130,10 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
-Tm8gS2VubmV0aCB2b2PDqiBwb2RlIHJlc2dhdGFyIGNvbSBwcmF0aWNpZGFkZSBzdWFzIG9yZGVucyBk
-ZSBwYWdhbWVudG8gZGEgSnVzdGnDp2EgRXN0YWR1YWwsIEZlZGVyYWwgb3UgZG8gVHJhYmFsaG8uIANJ
-c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
+VXRpbGl6ZSBjYXJ0w6NvIGRlIGNyw6lkaXRvIHBhcmEgcGFnYXIgA2EgdGFyaWZhIGRlIHNlcnZpw6dv
+IGRvIEtlbm5ldGggA2NvbSBzZWd1cmFuw6dhIGUgYWdpbGlkYWRlLiBPIHBhZ2FtZW50byDDqSBwcm9j
+ZXNzYWRvIGltZWRpYXRhbWVudGUsIHBlcm1pdGluZG8gcXVlIG8gc2VydmnDp28gaW5pY2llIGNvbSBt
+dWl0YSByYXBpZGU
 </string>
                                                                         <attributes>
                                                                             <color key="NSColor" name="Gray"/>
@@ -181,20 +182,21 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo é dinheiro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-Ep-WjQ">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça tudo com o Kenneth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-Ep-WjQ">
                                                                 <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-5t-IBt">
-                                                                <rect key="frame" x="70" y="467.5" width="274" height="155"/>
+                                                                <rect key="frame" x="70" y="467.5" width="274" height="180.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
-Tm8gS2VubmV0aCB2b2PDqiBwb2RlIHJlc2dhdGFyIGNvbSBwcmF0aWNpZGFkZSBzdWFzIG9yZGVucyBk
-ZSBwYWdhbWVudG8gZGEgSnVzdGnDp2EgRXN0YWR1YWwsIEZlZGVyYWwgb3UgZG8gVHJhYmFsaG8uIANJ
-c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
+RmlxdWUgdHJhbnF1aWxvIGUgZGVpeGUgbyBLZW5uZXRoIANjdWlkYXIgZG8gcmVzZ2F0ZSBkYXMgb3Jk
+ZW5zIGRlIHBhZ2FtZW50byBwYXJhIHZvY8OqLiBBY29tcGFuaGUgbyBoaXN0w7NyaWNvIGRhcyBvcmRl
+bnMgZGUgcGFnYW1lbnRvIGUgcmVjZWJhIG5vdGlmaWNhw6fDtWVzIHF1YW5kbyBvIHByb2Nlc3NvIANk
+ZSByZXNnYXRlIGZvciBjb25jbHXDrWRvLg
 </string>
                                                                         <attributes>
                                                                             <color key="NSColor" name="Gray"/>
@@ -243,7 +245,7 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo é dinheiro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-En-BCy">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pague com cartão de Crédito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-En-BCy">
                                                                 <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
@@ -254,9 +256,10 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
-Tm8gS2VubmV0aCB2b2PDqiBwb2RlIHJlc2dhdGFyIGNvbSBwcmF0aWNpZGFkZSBzdWFzIG9yZGVucyBk
-ZSBwYWdhbWVudG8gZGEgSnVzdGnDp2EgRXN0YWR1YWwsIEZlZGVyYWwgb3UgZG8gVHJhYmFsaG8uIANJ
-c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
+SXIgYXTDqSB1bWEgYWfDqm5jaWEgYmFuY8OhcmlhLCADY2FycmVnYW5kbyB1bWEgcGFzdGEgY2hlaWEg
+ZGUgcGFww6lpcyADw6kgY29pc2EgZG8gcGFzc2Fkby4gQ29tIG8gS2VubmV0aCADdG9kbyBwcm9jZXNz
+byBkZSByZXNnYXRlIAPDqSBkaWdpdGFsIGUgZmVpdG8gYXRyYXbDqXMgZG8gc21hcnRwaG9uZSwgA2Jl
+bSBzaW1wbGVzIGUgcsOhcGlkby4
 </string>
                                                                         <attributes>
                                                                             <color key="NSColor" name="Gray"/>
