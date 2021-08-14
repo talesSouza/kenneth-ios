@@ -2,15 +2,7 @@ import UIKit
 
 extension UIColor {
     
-    var gold: UIColor {
-        UIColor(named: "Gold")!
-    }
-    
-    var gray: UIColor {
-        UIColor(named: "Gray")!
-    }
-    
-    var grayLight: UIColor {
-        UIColor(named: "GrayLight")!
-    }
+    static let gold =  UIColor(named: "Gold")!
+    static let gray: UIColor = UIColor(named: "Gray")!
+    static let grayLight: UIColor = UIColor(named: "GrayLight")!
 }
