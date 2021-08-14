@@ -15,6 +15,8 @@
 		1C53596426C83E9400F5B148 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53596226C83E9400F5B148 /* LaunchScreen.storyboard */; };
 		1C53596F26C83E9400F5B148 /* KennethTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53596E26C83E9400F5B148 /* KennethTests.swift */; };
 		1C53597A26C83E9400F5B148 /* KennethUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53597926C83E9400F5B148 /* KennethUITests.swift */; };
+		1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */; };
+		1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */; };
 		47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */; };
 		47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */; };
 		47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */; };
@@ -53,6 +55,8 @@
 		1C53597526C83E9400F5B148 /* KennethUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KennethUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53597926C83E9400F5B148 /* KennethUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KennethUITests.swift; sourceTree = "<group>"; };
 		1C53597B26C83E9400F5B148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 		47ED84B126C842F7003817AD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */,
+				1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -341,6 +347,8 @@
 				1C53595C26C83E9200F5B148 /* ViewController.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
+				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
+				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
