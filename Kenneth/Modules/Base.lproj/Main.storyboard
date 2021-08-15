@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hVs-xs-qtx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -320,7 +320,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-868" y="88"/>
+            <point key="canvasLocation" x="-730" y="88"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="1kF-vF-jQ4">
@@ -343,6 +343,9 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                 <state key="normal" title="ENTRAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="0cr-Pe-nC7" kind="show" id="IIo-7k-1MG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iee-OI-CCm">
                                 <rect key="frame" x="40" y="643" width="334" height="55"/>
@@ -354,6 +357,9 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                 <state key="normal" title="CADASTRAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rtz-6g-91y" kind="show" id="TR8-Pm-o0v"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-object" translatesAutoresizingMaskIntoConstraints="NO" id="Ddr-wU-SXI">
                                 <rect key="frame" x="167" y="256" width="80" height="80"/>
@@ -381,16 +387,12 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vIC-Ag-uYz"/>
-                    <connections>
-                        <segue destination="0cr-Pe-nC7" kind="show" id="Al5-4P-npd"/>
-                        <segue destination="rtz-6g-91y" kind="show" id="Gdu-dB-QRE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tPb-jS-BQh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1123.1884057971015" y="87.723214285714278"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="kDW-xe-BF7">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="0cr-Pe-nC7" customClass="LoginViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
@@ -433,7 +435,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7T-82-Bdx" userLabel="tf2View">
                                         <rect key="frame" x="20" y="100" width="334" height="60"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-VV-x2V">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-VV-x2V">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
@@ -511,7 +513,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                             <constraint firstItem="onK-ts-FdX" firstAttribute="leading" secondItem="s4U-h0-u2S" secondAttribute="leading" id="t1U-zc-x21"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="upC-eU-2m3"/>
+                    <navigationItem key="navigationItem" title="Login" id="upC-eU-2m3"/>
                     <connections>
                         <outlet property="forgotPasswordLabel" destination="puX-zg-HPW" id="ikp-qx-e5L"/>
                     </connections>
@@ -520,7 +522,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
             </objects>
             <point key="canvasLocation" x="2139.130434782609" y="-293.30357142857139"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Cadastro-->
         <scene sceneID="ryG-rg-ezG">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="rtz-6g-91y" customClass="SignUpViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
@@ -544,7 +546,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-xQ-Kqx" userLabel="tf1View">
                                         <rect key="frame" x="20" y="20" width="334" height="60"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-QF-jZX">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-QF-jZX">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
@@ -563,11 +565,11 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-Xv-NI3" userLabel="tf2View">
                                         <rect key="frame" x="20" y="100" width="334" height="60"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-Dn-e0L">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-Dn-e0L">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="GrayLight"/>
@@ -582,7 +584,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Fx-OSK" userLabel="tf3View">
                                         <rect key="frame" x="20" y="180" width="334" height="60"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-vO-xlX">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-vO-xlX">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2Sp-pb-bcK"/>
@@ -603,10 +605,10 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                             <constraint firstAttribute="height" constant="60" id="rcy-cw-Mwy"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-6l-N7l" userLabel="tf4View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-6l-N7l" userLabel="tf4View">
                                         <rect key="frame" x="20" y="260" width="334" height="60"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-36-zbA">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmar senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-36-zbA">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="Hth-tG-N2F"/>
@@ -650,6 +652,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <constraint firstItem="3c0-Xv-NI3" firstAttribute="leading" secondItem="hwT-rc-JVX" secondAttribute="leading" constant="20" id="YZY-3l-3bw"/>
                                     <constraint firstItem="sc3-M8-WLe" firstAttribute="top" secondItem="oVg-6l-N7l" secondAttribute="bottom" constant="20" id="Z13-ay-gQt"/>
                                     <constraint firstAttribute="trailing" secondItem="3c0-Xv-NI3" secondAttribute="trailing" constant="20" id="ZDK-3r-fCN"/>
+                                    <constraint firstItem="oVg-6l-N7l" firstAttribute="centerX" secondItem="hwT-rc-JVX" secondAttribute="centerX" id="eeX-xW-uWF"/>
                                     <constraint firstItem="oVg-6l-N7l" firstAttribute="top" secondItem="tXb-Fx-OSK" secondAttribute="bottom" constant="20" id="gPE-ua-t8o"/>
                                     <constraint firstItem="p6t-xQ-Kqx" firstAttribute="top" secondItem="hwT-rc-JVX" secondAttribute="top" constant="20" id="ocZ-yh-Otz"/>
                                     <constraint firstItem="tXb-Fx-OSK" firstAttribute="centerX" secondItem="hwT-rc-JVX" secondAttribute="centerX" id="v3M-rs-Og9"/>
@@ -671,7 +674,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                             <constraint firstItem="k0F-nP-Hpc" firstAttribute="trailing" secondItem="hwT-rc-JVX" secondAttribute="trailing" constant="20" id="ySr-Wf-1Fk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sVc-X1-Gg5"/>
+                    <navigationItem key="navigationItem" title="Cadastro" id="sVc-X1-Gg5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="II4-7B-smE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -682,9 +685,14 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hVs-xs-qtx" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pCc-ui-lFt">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" backIndicatorTransitionMaskImage="chevron.backward" id="pCc-ui-lFt">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Gold"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Gold"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -697,6 +705,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="ic-bank" width="235" height="226"/>
         <image name="ic-clock" width="215" height="227"/>
         <image name="ic-creditcard" width="221" height="209"/>
