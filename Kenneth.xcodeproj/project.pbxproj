@@ -18,6 +18,8 @@
 		1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */; };
 		1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */; };
 		1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */; };
+		1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F226C88EE600A77284 /* LoginViewController.swift */; };
+		1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */; };
 		47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */; };
 		47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */; };
 		47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */; };
@@ -59,6 +61,8 @@
 		1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C63B3F226C88EE600A77284 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
@@ -158,6 +162,14 @@
 			path = Slider;
 			sourceTree = "<group>";
 		};
+		1C63B3F126C88ECE00A77284 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1C63B3F226C88EE600A77284 /* LoginViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		47ED84A826C84294003817AD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +210,7 @@
 		47ED84AC26C842DA003817AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1C63B3F126C88ECE00A77284 /* Onboarding */,
 				1C63B3EE26C867C900A77284 /* Slider */,
 				1C53595D26C83E9200F5B148 /* Main.storyboard */,
 			);
@@ -214,6 +227,7 @@
 		47ED84B126C842F7003817AD /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */,
 				1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */,
 				1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */,
 				1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */,
@@ -355,9 +369,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
+				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
