@@ -12,6 +12,9 @@ extension OnboardingViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
+        if let font = UIFont(name: "SFProDisplay-Semibold", size: 16) {
+            self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: font]
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {

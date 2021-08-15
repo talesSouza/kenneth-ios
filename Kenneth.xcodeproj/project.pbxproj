@@ -23,6 +23,7 @@
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
+		47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */; };
 		47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */; };
 		47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */; };
 		47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */; };
@@ -69,6 +70,7 @@
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		47CE106326C99967002EAAE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */,
 				1C63B3F226C88EE600A77284 /* LoginViewController.swift */,
 				1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */,
+				47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
+				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,

@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     
     func setLayout() {
-        forgotPasswordLabel.attributedText = "Esqueci minha senha".setUnderlined()
+        let text = "Esqueci minha senha"
+        forgotPasswordLabel.attributedText = text.setUnderlined()
     }
 }
