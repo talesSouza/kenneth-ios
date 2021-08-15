@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hVs-xs-qtx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hVs-xs-qtx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,6 +15,9 @@
         </array>
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
         </array>
     </customFonts>
     <scenes>
@@ -339,7 +342,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="G3C-2A-HqK"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
                                 <state key="normal" title="ENTRAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -353,7 +356,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="40B-O3-knY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
                                 <state key="normal" title="CADASTRAR">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -413,55 +416,60 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aov-pu-gj3">
                                 <rect key="frame" x="20" y="504" width="374" height="392"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW7-G6-207" userLabel="tf1View">
-                                        <rect key="frame" x="20" y="20" width="334" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sA9-M3-VKi">
+                                        <rect key="frame" x="20" y="20" width="334" height="220"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHO-g1-Oyi">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW7-G6-207" userLabel="tf1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dHO-g1-Oyi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="dHO-g1-Oyi" secondAttribute="bottom" id="CZC-sM-5A6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="dHO-g1-Oyi" secondAttribute="trailing" id="bFR-9p-lqZ"/>
+                                                    <constraint firstItem="dHO-g1-Oyi" firstAttribute="leading" secondItem="lW7-G6-207" secondAttribute="leading" id="f4b-IW-vNp"/>
+                                                    <constraint firstAttribute="height" constant="60" id="qN9-Wo-HiL"/>
+                                                    <constraint firstItem="dHO-g1-Oyi" firstAttribute="top" secondItem="lW7-G6-207" secondAttribute="top" id="scz-jw-Qdd"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7T-82-Bdx" userLabel="tf2View">
+                                                <rect key="frame" x="0.0" y="80" width="334" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-VV-x2V">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="J6n-VV-x2V" secondAttribute="trailing" id="C74-7G-orc"/>
+                                                    <constraint firstItem="J6n-VV-x2V" firstAttribute="top" secondItem="O7T-82-Bdx" secondAttribute="top" id="Nez-i6-BFb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="J6n-VV-x2V" secondAttribute="bottom" id="Rxw-Ft-G3Z"/>
+                                                    <constraint firstItem="J6n-VV-x2V" firstAttribute="leading" secondItem="O7T-82-Bdx" secondAttribute="leading" id="S21-OX-1ZR"/>
+                                                    <constraint firstAttribute="height" constant="60" id="qoA-R3-0ew"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13u-kD-oqp" userLabel="Login">
+                                                <rect key="frame" x="0.0" y="160" width="334" height="60"/>
+                                                <color key="backgroundColor" name="Gold"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="eqC-lr-1hO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                                <state key="normal" title="ENTRAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="dHO-g1-Oyi" secondAttribute="bottom" id="CZC-sM-5A6"/>
-                                            <constraint firstAttribute="trailing" secondItem="dHO-g1-Oyi" secondAttribute="trailing" id="bFR-9p-lqZ"/>
-                                            <constraint firstItem="dHO-g1-Oyi" firstAttribute="leading" secondItem="lW7-G6-207" secondAttribute="leading" id="f4b-IW-vNp"/>
-                                            <constraint firstAttribute="height" constant="60" id="qN9-Wo-HiL"/>
-                                            <constraint firstItem="dHO-g1-Oyi" firstAttribute="top" secondItem="lW7-G6-207" secondAttribute="top" id="scz-jw-Qdd"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7T-82-Bdx" userLabel="tf2View">
-                                        <rect key="frame" x="20" y="100" width="334" height="60"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J6n-VV-x2V">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="J6n-VV-x2V" secondAttribute="trailing" id="C74-7G-orc"/>
-                                            <constraint firstItem="J6n-VV-x2V" firstAttribute="top" secondItem="O7T-82-Bdx" secondAttribute="top" id="Nez-i6-BFb"/>
-                                            <constraint firstAttribute="bottom" secondItem="J6n-VV-x2V" secondAttribute="bottom" id="Rxw-Ft-G3Z"/>
-                                            <constraint firstItem="J6n-VV-x2V" firstAttribute="leading" secondItem="O7T-82-Bdx" secondAttribute="leading" id="S21-OX-1ZR"/>
-                                            <constraint firstAttribute="height" constant="60" id="qoA-R3-0ew"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="13u-kD-oqp" userLabel="Login">
-                                        <rect key="frame" x="20" y="180" width="334" height="60"/>
-                                        <color key="backgroundColor" name="Gold"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="eqC-lr-1hO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                        <state key="normal" title="ENTRAR">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Esqueci minha senha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puX-zg-HPW">
                                         <rect key="frame" x="133" y="284" width="108" height="20"/>
                                         <constraints>
@@ -472,7 +480,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                         <color key="textColor" name="Gray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-zI-9Ci" userLabel="ForgotPasswordButton">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJh-zI-9Ci" userLabel="ForgotPasswordButton">
                                         <rect key="frame" x="133" y="328" width="108" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="8dT-4d-neH"/>
@@ -482,19 +490,12 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="13u-kD-oqp" firstAttribute="leading" secondItem="aov-pu-gj3" secondAttribute="leading" constant="20" id="EmZ-ki-HHh"/>
-                                    <constraint firstItem="13u-kD-oqp" firstAttribute="top" secondItem="O7T-82-Bdx" secondAttribute="bottom" constant="20" id="GfT-th-7bq"/>
+                                    <constraint firstItem="sA9-M3-VKi" firstAttribute="top" secondItem="aov-pu-gj3" secondAttribute="top" constant="20" symbolic="YES" id="M6X-4c-Y4x"/>
                                     <constraint firstItem="hJh-zI-9Ci" firstAttribute="centerX" secondItem="aov-pu-gj3" secondAttribute="centerX" id="MxQ-hm-K3h"/>
-                                    <constraint firstItem="lW7-G6-207" firstAttribute="leading" secondItem="aov-pu-gj3" secondAttribute="leading" constant="20" id="Pbm-27-Hfc"/>
                                     <constraint firstAttribute="bottom" secondItem="puX-zg-HPW" secondAttribute="bottom" constant="88" id="Pt1-oI-zLb"/>
-                                    <constraint firstItem="hJh-zI-9Ci" firstAttribute="top" secondItem="13u-kD-oqp" secondAttribute="bottom" constant="88" id="ZLW-aL-FZE"/>
-                                    <constraint firstAttribute="trailing" secondItem="O7T-82-Bdx" secondAttribute="trailing" constant="20" id="ao6-03-RUO"/>
-                                    <constraint firstAttribute="trailing" secondItem="13u-kD-oqp" secondAttribute="trailing" constant="20" id="eih-i3-XvX"/>
-                                    <constraint firstItem="O7T-82-Bdx" firstAttribute="top" secondItem="lW7-G6-207" secondAttribute="bottom" constant="20" id="fqD-tq-mdf"/>
-                                    <constraint firstItem="lW7-G6-207" firstAttribute="top" secondItem="aov-pu-gj3" secondAttribute="top" constant="20" id="gix-Fb-QXY"/>
-                                    <constraint firstItem="O7T-82-Bdx" firstAttribute="leading" secondItem="aov-pu-gj3" secondAttribute="leading" constant="20" id="l8j-MZ-xDS"/>
+                                    <constraint firstItem="sA9-M3-VKi" firstAttribute="leading" secondItem="aov-pu-gj3" secondAttribute="leading" constant="20" symbolic="YES" id="Zh0-6S-oDP"/>
+                                    <constraint firstAttribute="trailing" secondItem="sA9-M3-VKi" secondAttribute="trailing" constant="20" symbolic="YES" id="aiO-jU-dmd"/>
                                     <constraint firstItem="puX-zg-HPW" firstAttribute="centerX" secondItem="aov-pu-gj3" secondAttribute="centerX" id="m8g-fE-2sl"/>
-                                    <constraint firstAttribute="trailing" secondItem="lW7-G6-207" secondAttribute="trailing" constant="20" id="p3E-KQ-jOa"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -520,12 +521,12 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2u-6j-l7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139.130434782609" y="-293.30357142857139"/>
+            <point key="canvasLocation" x="1893" y="-293"/>
         </scene>
         <!--Cadastro-->
         <scene sceneID="ryG-rg-ezG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="rtz-6g-91y" customClass="SignUpViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="rtz-6g-91y" customClass="RegisterViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qSF-VN-gOo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -543,119 +544,114 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwT-rc-JVX">
                                 <rect key="frame" x="20" y="376" width="374" height="520"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-xQ-Kqx" userLabel="tf1View">
-                                        <rect key="frame" x="20" y="20" width="334" height="60"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QSe-cD-MSl">
+                                        <rect key="frame" x="20" y="20" width="334" height="380"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-QF-jZX">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6t-xQ-Kqx" userLabel="tf1View">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="E3j-BH-jIN"/>
-                                            <constraint firstAttribute="trailing" secondItem="8w3-QF-jZX" secondAttribute="trailing" id="Lmi-fE-zny"/>
-                                            <constraint firstAttribute="bottom" secondItem="8w3-QF-jZX" secondAttribute="bottom" id="fcU-J7-Rz8"/>
-                                            <constraint firstItem="8w3-QF-jZX" firstAttribute="top" secondItem="p6t-xQ-Kqx" secondAttribute="top" id="kYv-O3-qPU"/>
-                                            <constraint firstItem="8w3-QF-jZX" firstAttribute="leading" secondItem="p6t-xQ-Kqx" secondAttribute="leading" id="pvD-yc-ESR"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-Xv-NI3" userLabel="tf2View">
-                                        <rect key="frame" x="20" y="100" width="334" height="60"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-Dn-e0L">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="1fZ-Is-Vr2"/>
-                                            <constraint firstAttribute="trailing" secondItem="NBo-Dn-e0L" secondAttribute="trailing" id="cSk-WB-281"/>
-                                            <constraint firstItem="NBo-Dn-e0L" firstAttribute="top" secondItem="3c0-Xv-NI3" secondAttribute="top" id="f7o-x6-0Pp"/>
-                                            <constraint firstAttribute="bottom" secondItem="NBo-Dn-e0L" secondAttribute="bottom" id="kxg-nZ-vUB"/>
-                                            <constraint firstItem="NBo-Dn-e0L" firstAttribute="leading" secondItem="3c0-Xv-NI3" secondAttribute="leading" id="qCz-67-svc"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Fx-OSK" userLabel="tf3View">
-                                        <rect key="frame" x="20" y="180" width="334" height="60"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-vO-xlX">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Nome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8w3-QF-jZX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="2Sp-pb-bcK"/>
-                                                    <constraint firstAttribute="width" constant="334" id="5sC-je-BMn"/>
+                                                    <constraint firstAttribute="height" constant="60" id="E3j-BH-jIN"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8w3-QF-jZX" secondAttribute="trailing" id="Lmi-fE-zny"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8w3-QF-jZX" secondAttribute="bottom" id="fcU-J7-Rz8"/>
+                                                    <constraint firstItem="8w3-QF-jZX" firstAttribute="top" secondItem="p6t-xQ-Kqx" secondAttribute="top" id="kYv-O3-qPU"/>
+                                                    <constraint firstItem="8w3-QF-jZX" firstAttribute="leading" secondItem="p6t-xQ-Kqx" secondAttribute="leading" id="pvD-yc-ESR"/>
                                                 </constraints>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                        </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="qHO-vO-xlX" secondAttribute="bottom" id="7rS-hu-Hqe"/>
-                                            <constraint firstAttribute="trailing" secondItem="qHO-vO-xlX" secondAttribute="trailing" id="B6m-pF-gHO"/>
-                                            <constraint firstItem="qHO-vO-xlX" firstAttribute="top" secondItem="tXb-Fx-OSK" secondAttribute="top" id="PrU-om-EkY"/>
-                                            <constraint firstItem="qHO-vO-xlX" firstAttribute="leading" secondItem="tXb-Fx-OSK" secondAttribute="leading" id="hwv-l5-c1S"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="kh0-3p-G97"/>
-                                            <constraint firstAttribute="height" constant="60" id="rcy-cw-Mwy"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-6l-N7l" userLabel="tf4View">
-                                        <rect key="frame" x="20" y="260" width="334" height="60"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmar senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-36-zbA">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3c0-Xv-NI3" userLabel="tf2View">
+                                                <rect key="frame" x="0.0" y="80" width="334" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NBo-Dn-e0L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="Hth-tG-N2F"/>
-                                                    <constraint firstAttribute="width" constant="334" id="LEG-Wr-RbX"/>
+                                                    <constraint firstAttribute="height" constant="60" id="1fZ-Is-Vr2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="NBo-Dn-e0L" secondAttribute="trailing" id="cSk-WB-281"/>
+                                                    <constraint firstItem="NBo-Dn-e0L" firstAttribute="top" secondItem="3c0-Xv-NI3" secondAttribute="top" id="f7o-x6-0Pp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="NBo-Dn-e0L" secondAttribute="bottom" id="kxg-nZ-vUB"/>
+                                                    <constraint firstItem="NBo-Dn-e0L" firstAttribute="leading" secondItem="3c0-Xv-NI3" secondAttribute="leading" id="qCz-67-svc"/>
                                                 </constraints>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Fx-OSK" userLabel="tf3View">
+                                                <rect key="frame" x="0.0" y="160" width="334" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qHO-vO-xlX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="2Sp-pb-bcK"/>
+                                                            <constraint firstAttribute="width" constant="334" id="5sC-je-BMn"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="qHO-vO-xlX" secondAttribute="bottom" id="7rS-hu-Hqe"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qHO-vO-xlX" secondAttribute="trailing" id="B6m-pF-gHO"/>
+                                                    <constraint firstItem="qHO-vO-xlX" firstAttribute="top" secondItem="tXb-Fx-OSK" secondAttribute="top" id="PrU-om-EkY"/>
+                                                    <constraint firstItem="qHO-vO-xlX" firstAttribute="leading" secondItem="tXb-Fx-OSK" secondAttribute="leading" id="hwv-l5-c1S"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="kh0-3p-G97"/>
+                                                    <constraint firstAttribute="height" constant="60" id="rcy-cw-Mwy"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-6l-N7l" userLabel="tf4View">
+                                                <rect key="frame" x="0.0" y="240" width="334" height="60"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Confirmar senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-36-zbA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Hth-tG-N2F"/>
+                                                            <constraint firstAttribute="width" constant="334" id="LEG-Wr-RbX"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                    </textField>
+                                                </subviews>
+                                                <color key="backgroundColor" name="GrayLight"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="4Oc-so-DRx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aBP-36-zbA" secondAttribute="bottom" id="Dhu-SP-7Sb"/>
+                                                    <constraint firstAttribute="height" constant="60" id="IsF-wf-Hjn"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aBP-36-zbA" secondAttribute="trailing" id="fhT-ds-ENu"/>
+                                                    <constraint firstItem="aBP-36-zbA" firstAttribute="leading" secondItem="oVg-6l-N7l" secondAttribute="leading" id="pfQ-yl-MXf"/>
+                                                    <constraint firstItem="aBP-36-zbA" firstAttribute="top" secondItem="oVg-6l-N7l" secondAttribute="top" id="qlN-Oa-NQ1"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-M8-WLe" userLabel="Sign Up">
+                                                <rect key="frame" x="0.0" y="320" width="334" height="60"/>
+                                                <color key="backgroundColor" name="Gold"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="gzZ-op-45z"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
+                                                <state key="normal" title="CADASTRAR">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" name="GrayLight"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="4Oc-so-DRx"/>
-                                            <constraint firstAttribute="bottom" secondItem="aBP-36-zbA" secondAttribute="bottom" id="Dhu-SP-7Sb"/>
-                                            <constraint firstAttribute="height" constant="60" id="IsF-wf-Hjn"/>
-                                            <constraint firstAttribute="trailing" secondItem="aBP-36-zbA" secondAttribute="trailing" id="fhT-ds-ENu"/>
-                                            <constraint firstItem="aBP-36-zbA" firstAttribute="leading" secondItem="oVg-6l-N7l" secondAttribute="leading" id="pfQ-yl-MXf"/>
-                                            <constraint firstItem="aBP-36-zbA" firstAttribute="top" secondItem="oVg-6l-N7l" secondAttribute="top" id="qlN-Oa-NQ1"/>
-                                        </constraints>
-                                    </view>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-M8-WLe" userLabel="Sign Up">
-                                        <rect key="frame" x="20" y="340" width="334" height="60"/>
-                                        <color key="backgroundColor" name="Gold"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="gzZ-op-45z"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
-                                        <state key="normal" title="CADASTRAR">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="sc3-M8-WLe" firstAttribute="leading" secondItem="hwT-rc-JVX" secondAttribute="leading" constant="20" id="03E-uA-g2E"/>
-                                    <constraint firstItem="tXb-Fx-OSK" firstAttribute="top" secondItem="3c0-Xv-NI3" secondAttribute="bottom" constant="20" id="2Sd-4k-AIi"/>
-                                    <constraint firstItem="3c0-Xv-NI3" firstAttribute="top" secondItem="p6t-xQ-Kqx" secondAttribute="bottom" constant="20" id="2kS-4T-RfK"/>
-                                    <constraint firstAttribute="trailing" secondItem="p6t-xQ-Kqx" secondAttribute="trailing" constant="20" id="Bn0-Ow-XML"/>
-                                    <constraint firstItem="p6t-xQ-Kqx" firstAttribute="leading" secondItem="hwT-rc-JVX" secondAttribute="leading" constant="20" id="N70-CC-I72"/>
-                                    <constraint firstAttribute="trailing" secondItem="sc3-M8-WLe" secondAttribute="trailing" constant="20" id="OEh-r7-M54"/>
-                                    <constraint firstItem="3c0-Xv-NI3" firstAttribute="leading" secondItem="hwT-rc-JVX" secondAttribute="leading" constant="20" id="YZY-3l-3bw"/>
-                                    <constraint firstItem="sc3-M8-WLe" firstAttribute="top" secondItem="oVg-6l-N7l" secondAttribute="bottom" constant="20" id="Z13-ay-gQt"/>
-                                    <constraint firstAttribute="trailing" secondItem="3c0-Xv-NI3" secondAttribute="trailing" constant="20" id="ZDK-3r-fCN"/>
-                                    <constraint firstItem="oVg-6l-N7l" firstAttribute="centerX" secondItem="hwT-rc-JVX" secondAttribute="centerX" id="eeX-xW-uWF"/>
-                                    <constraint firstItem="oVg-6l-N7l" firstAttribute="top" secondItem="tXb-Fx-OSK" secondAttribute="bottom" constant="20" id="gPE-ua-t8o"/>
-                                    <constraint firstItem="p6t-xQ-Kqx" firstAttribute="top" secondItem="hwT-rc-JVX" secondAttribute="top" constant="20" id="ocZ-yh-Otz"/>
-                                    <constraint firstItem="tXb-Fx-OSK" firstAttribute="centerX" secondItem="hwT-rc-JVX" secondAttribute="centerX" id="v3M-rs-Og9"/>
+                                    <constraint firstItem="QSe-cD-MSl" firstAttribute="leading" secondItem="hwT-rc-JVX" secondAttribute="leading" constant="20" symbolic="YES" id="Xli-Nz-gBQ"/>
+                                    <constraint firstItem="QSe-cD-MSl" firstAttribute="top" secondItem="hwT-rc-JVX" secondAttribute="top" constant="20" symbolic="YES" id="ext-17-y5G"/>
+                                    <constraint firstAttribute="trailing" secondItem="QSe-cD-MSl" secondAttribute="trailing" constant="20" symbolic="YES" id="uNy-Pa-8FU"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -678,7 +674,7 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="II4-7B-smE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2139.130434782609" y="410.49107142857139"/>
+            <point key="canvasLocation" x="1893" y="411"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uCe-YX-a9J">

@@ -12,7 +12,8 @@ class LoginViewController: UIViewController {
 
 // MARK: - Local Methods
 extension LoginViewController {
+    
     func setLayout() {
-        forgotPasswordLabel.getLabelUnderlined(string: "Esqueci minha senha")
+        forgotPasswordLabel.attributedText = "Esqueci minha senha".setUnderlined()
     }
 }
