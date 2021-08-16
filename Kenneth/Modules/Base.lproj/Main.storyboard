@@ -499,6 +499,9 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                                 <state key="normal" title="ENTRAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="loginTouchUpInside:" destination="0cr-Pe-nC7" eventType="touchUpInside" id="evm-PR-Pw4"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -562,7 +565,9 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="upC-eU-2m3"/>
                     <connections>
+                        <outlet property="emailTextField" destination="dHO-g1-Oyi" id="pQg-Yo-GmQ"/>
                         <outlet property="forgotPasswordLabel" destination="puX-zg-HPW" id="ikp-qx-e5L"/>
+                        <outlet property="passwordTextField" destination="J6n-VV-x2V" id="ciE-RC-9hJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2u-6j-l7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -689,6 +694,9 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                                 <state key="normal" title="CADASTRAR">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="registerTouchUpInside:" destination="rtz-6g-91y" eventType="touchUpInside" id="Jdt-XV-KkQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -717,6 +725,12 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cadastro" id="sVc-X1-Gg5"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="NBo-Dn-e0L" id="OOf-H9-b5y"/>
+                        <outlet property="nameTextField" destination="8w3-QF-jZX" id="Jvk-DN-iUY"/>
+                        <outlet property="passwordConfirmTextField" destination="aBP-36-zbA" id="iIX-RU-l7d"/>
+                        <outlet property="passwordTextField" destination="qHO-vO-xlX" id="7ac-Hl-5Hr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="II4-7B-smE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

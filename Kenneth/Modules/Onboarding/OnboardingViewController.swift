@@ -20,9 +20,8 @@ extension OnboardingViewController {
     }
 }
 
-// MARK: - Methods
+// MARK: - Private Methods
 extension OnboardingViewController {
-    
     func setNavigationBarLayout() {
         if let text = UIFont(name: "SFProDisplay-Light", size: 20),
            let thisNavigation = self.navigationController {
