@@ -1,10 +1,3 @@
-//
-//  String+Extensions.swift
-//  Kenneth
-//
-//  Created by Bruno Moreira on 15/08/21.
-//
-
 import UIKit
 
 extension String {
