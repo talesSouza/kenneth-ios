@@ -6,14 +6,15 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPasswordLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+}
+
+// MARK: - Life Cycle
+extension LoginViewController {
     
-    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setLayout()
     }
-    
-    
 }
 
 // MARK: - Local Methods

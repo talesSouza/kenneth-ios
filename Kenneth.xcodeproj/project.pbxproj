@@ -28,6 +28,9 @@
 		47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */; };
 		47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */; };
 		47ED84B926C84CEF003817AD /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B526C84CEF003817AD /* SF-Pro-Display-Regular.otf */; };
+		4BF1E0B792FBC23635C544CD /* Pods_KennethTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F106911B80D931193AF903E /* Pods_KennethTests.framework */; };
+		BF7B1AD27972C23762C63413 /* Pods_Kenneth_KennethUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957F9A34990BABC457485FA9 /* Pods_Kenneth_KennethUITests.framework */; };
+		D19C7705A828C59BF2470F74 /* Pods_Kenneth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C53595426C83E9200F5B148 /* Kenneth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenneth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53595726C83E9200F5B148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C53595926C83E9200F5B148 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,19 +66,27 @@
 		1C53597526C83E9400F5B148 /* KennethUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KennethUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53597926C83E9400F5B148 /* KennethUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KennethUITests.swift; sourceTree = "<group>"; };
 		1C53597B26C83E9400F5B148 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = SOURCE_ROOT; };
-		1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C53598826C85F9F00F5B148 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Extensions.swift"; path = "Kenneth/Extensions/UIKit/UIColor+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C53598A26C860B800F5B148 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIFont+Extensions.swift"; path = "Kenneth/Extensions/UIKit/UIFont+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C63B3F226C88EE600A77284 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47CE106326C99967002EAAE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		47ED84B326C84CEF003817AD /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		47ED84B426C84CEF003817AD /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
 		47ED84B526C84CEF003817AD /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		6F106911B80D931193AF903E /* Pods_KennethTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KennethTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		954F70E797D3A7125BBD8A57 /* Pods-Kenneth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth.debug.xcconfig"; path = "Target Support Files/Pods-Kenneth/Pods-Kenneth.debug.xcconfig"; sourceTree = "<group>"; };
+		957F9A34990BABC457485FA9 /* Pods_Kenneth_KennethUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth_KennethUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96645A9CDD64433DF950C302 /* Pods-KennethTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KennethTests.debug.xcconfig"; path = "Target Support Files/Pods-KennethTests/Pods-KennethTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE8D75847E462F98980B5DE7 /* Pods-KennethTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KennethTests.release.xcconfig"; path = "Target Support Files/Pods-KennethTests/Pods-KennethTests.release.xcconfig"; sourceTree = "<group>"; };
+		E9C30F5DE892EB8B107FAFBA /* Pods-Kenneth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth.release.xcconfig"; path = "Target Support Files/Pods-Kenneth/Pods-Kenneth.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19C7705A828C59BF2470F74 /* Pods_Kenneth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF1E0B792FBC23635C544CD /* Pods_KennethTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +110,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF7B1AD27972C23762C63413 /* Pods_Kenneth_KennethUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B1043068F5A6FD55792DC58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */,
+				957F9A34990BABC457485FA9 /* Pods_Kenneth_KennethUITests.framework */,
+				6F106911B80D931193AF903E /* Pods_KennethTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1C53594B26C83E9200F5B148 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +135,8 @@
 				1C53596D26C83E9400F5B148 /* KennethTests */,
 				1C53597826C83E9400F5B148 /* KennethUITests */,
 				1C53595526C83E9200F5B148 /* Products */,
+				D3AAE4A64CDCF621E3B4CF87 /* Pods */,
+				0B1043068F5A6FD55792DC58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +274,20 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		D3AAE4A64CDCF621E3B4CF87 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				954F70E797D3A7125BBD8A57 /* Pods-Kenneth.debug.xcconfig */,
+				E9C30F5DE892EB8B107FAFBA /* Pods-Kenneth.release.xcconfig */,
+				0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */,
+				45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */,
+				96645A9CDD64433DF950C302 /* Pods-KennethTests.debug.xcconfig */,
+				DE8D75847E462F98980B5DE7 /* Pods-KennethTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -254,9 +295,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C53597E26C83E9400F5B148 /* Build configuration list for PBXNativeTarget "Kenneth" */;
 			buildPhases = (
+				543901BA77148012ABC41665 /* [CP] Check Pods Manifest.lock */,
 				1C53595026C83E9200F5B148 /* Sources */,
 				1C53595126C83E9200F5B148 /* Frameworks */,
 				1C53595226C83E9200F5B148 /* Resources */,
+				5D15E79D5398DA971D981EF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +314,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C53598126C83E9400F5B148 /* Build configuration list for PBXNativeTarget "KennethTests" */;
 			buildPhases = (
+				52812994C9EDA29E15B67D02 /* [CP] Check Pods Manifest.lock */,
 				1C53596626C83E9400F5B148 /* Sources */,
 				1C53596726C83E9400F5B148 /* Frameworks */,
 				1C53596826C83E9400F5B148 /* Resources */,
@@ -289,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C53598426C83E9400F5B148 /* Build configuration list for PBXNativeTarget "KennethUITests" */;
 			buildPhases = (
+				B0188E297607F7151E2B28D3 /* [CP] Check Pods Manifest.lock */,
 				1C53597126C83E9400F5B148 /* Sources */,
 				1C53597226C83E9400F5B148 /* Frameworks */,
 				1C53597326C83E9400F5B148 /* Resources */,
+				53B7598D7A82D2F303B4669E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -375,6 +421,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52812994C9EDA29E15B67D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KennethTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53B7598D7A82D2F303B4669E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		543901BA77148012ABC41665 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kenneth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D15E79D5398DA971D981EF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenneth/Pods-Kenneth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Kenneth/Pods-Kenneth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Kenneth/Pods-Kenneth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0188E297607F7151E2B28D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kenneth-KennethUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C53595026C83E9200F5B148 /* Sources */ = {
@@ -565,6 +714,7 @@
 		};
 		1C53597F26C83E9400F5B148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 954F70E797D3A7125BBD8A57 /* Pods-Kenneth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -584,6 +734,7 @@
 		};
 		1C53598026C83E9400F5B148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9C30F5DE892EB8B107FAFBA /* Pods-Kenneth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -603,6 +754,7 @@
 		};
 		1C53598226C83E9400F5B148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96645A9CDD64433DF950C302 /* Pods-KennethTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +777,7 @@
 		};
 		1C53598326C83E9400F5B148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8D75847E462F98980B5DE7 /* Pods-KennethTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -647,6 +800,7 @@
 		};
 		1C53598526C83E9400F5B148 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,6 +821,7 @@
 		};
 		1C53598626C83E9400F5B148 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
