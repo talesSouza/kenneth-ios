@@ -26,6 +26,7 @@
 		1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
+		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
 		47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */; };
 		47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */; };
@@ -83,6 +84,7 @@
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
+		472EB4D726DAF85300937B7E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		47CE106326C99967002EAAE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			children = (
 				47ED84AB26C842C6003817AD /* Components */,
 				47ED84AA26C842C0003817AD /* Extensions */,
+				472EB4D626DAF84200937B7E /* Models */,
 				47ED84AC26C842DA003817AD /* Modules */,
 				47ED84A826C84294003817AD /* Resources */,
 				1C7E6FF826DA89E0002E8E72 /* Service */,
@@ -266,6 +269,14 @@
 				1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		472EB4D626DAF84200937B7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				472EB4D726DAF85300937B7E /* BaseViewController.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		47ED84A826C84294003817AD /* Resources */ = {
@@ -596,6 +607,7 @@
 				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
+				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
