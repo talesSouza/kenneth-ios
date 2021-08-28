@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,10 @@
 		1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */; };
 		1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F226C88EE600A77284 /* LoginViewController.swift */; };
 		1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */; };
+		1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */; };
+		1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF926DA89F0002E8E72 /* LoginService.swift */; };
+		1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */; };
+		1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
@@ -71,6 +75,10 @@
 		1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C63B3F226C88EE600A77284 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1C7E6FF926DA89F0002E8E72 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
+		1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,10 +161,11 @@
 		1C53595626C83E9200F5B148 /* Kenneth */ = {
 			isa = PBXGroup;
 			children = (
-				47ED84AC26C842DA003817AD /* Modules */,
 				47ED84AB26C842C6003817AD /* Components */,
 				47ED84AA26C842C0003817AD /* Extensions */,
+				47ED84AC26C842DA003817AD /* Modules */,
 				47ED84A826C84294003817AD /* Resources */,
+				1C7E6FF826DA89E0002E8E72 /* Service */,
 			);
 			path = Kenneth;
 			sourceTree = "<group>";
@@ -200,12 +209,63 @@
 		1C63B3F126C88ECE00A77284 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */,
-				1C63B3F226C88EE600A77284 /* LoginViewController.swift */,
-				1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */,
-				47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */,
+				1C7E6FF626DA8491002E8E72 /* ForgotPassword */,
+				1C7E6FF226DA840A002E8E72 /* Login */,
+				1C7E6FF526DA8483002E8E72 /* Onboarding */,
+				1C7E6FF726DA849B002E8E72 /* Register */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1C7E6FF226DA840A002E8E72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1C63B3F226C88EE600A77284 /* LoginViewController.swift */,
+				1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */,
+				1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1C7E6FF526DA8483002E8E72 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1C7E6FF626DA8491002E8E72 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		1C7E6FF726DA849B002E8E72 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		1C7E6FF826DA89E0002E8E72 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E6FFB26DA8D05002E8E72 /* Login */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		1C7E6FFB26DA8D05002E8E72 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E6FF926DA89F0002E8E72 /* LoginService.swift */,
+				1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		47ED84A826C84294003817AD /* Resources */ = {
@@ -284,7 +344,6 @@
 				96645A9CDD64433DF950C302 /* Pods-KennethTests.debug.xcconfig */,
 				DE8D75847E462F98980B5DE7 /* Pods-KennethTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -534,14 +593,18 @@
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
 				1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
+				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
+				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
+				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
+				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

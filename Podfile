@@ -1,11 +1,10 @@
-platform :ios, '13.0'
+platform :ios, '13.6'
 use_frameworks!
 inhibit_all_warnings!
 
 target 'Kenneth' do
 
   # Pods for Kenneth
-  # pod 'UIFlow', '2.3.3'
   pod 'IQKeyboardManagerSwift', '6.5.6'
 
   target 'KennethTests' do
