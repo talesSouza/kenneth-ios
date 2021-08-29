@@ -26,6 +26,10 @@
 		1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */; };
 		1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700126DB0705002E8E72 /* ButtonView.swift */; };
 		1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700426DB0741002E8E72 /* NibOwnerLoadable.swift */; };
+		1C7E700726DB0CF2002E8E72 /* ClosureTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700626DB0CF2002E8E72 /* ClosureTypes.swift */; };
+		1C7E700926DB0E68002E8E72 /* ButtonViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700826DB0E68002E8E72 /* ButtonViewStyle.swift */; };
+		1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700C26DB0F19002E8E72 /* TextStyle.swift */; };
+		1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700E26DB1156002E8E72 /* TextBuilder.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
@@ -84,6 +88,10 @@
 		1C7E6FFE26DAAAA9002E8E72 /* LoginViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewState.swift; sourceTree = "<group>"; };
 		1C7E700126DB0705002E8E72 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		1C7E700426DB0741002E8E72 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		1C7E700626DB0CF2002E8E72 /* ClosureTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureTypes.swift; sourceTree = "<group>"; };
+		1C7E700826DB0E68002E8E72 /* ButtonViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewStyle.swift; sourceTree = "<group>"; };
+		1C7E700C26DB0F19002E8E72 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		1C7E700E26DB1156002E8E72 /* TextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBuilder.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -280,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				1C7E700126DB0705002E8E72 /* ButtonView.swift */,
+				1C7E700826DB0E68002E8E72 /* ButtonViewStyle.swift */,
 			);
 			path = ButtonView;
 			sourceTree = "<group>";
@@ -292,10 +301,28 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		1C7E700A26DB0EE8002E8E72 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E700B26DB0EF4002E8E72 /* TextBuilder */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		1C7E700B26DB0EF4002E8E72 /* TextBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				1C7E700C26DB0F19002E8E72 /* TextStyle.swift */,
+				1C7E700E26DB1156002E8E72 /* TextBuilder.swift */,
+			);
+			path = TextBuilder;
+			sourceTree = "<group>";
+		};
 		472EB4D626DAF84200937B7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				472EB4D726DAF85300937B7E /* BaseViewController.swift */,
+				1C7E700626DB0CF2002E8E72 /* ClosureTypes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +360,7 @@
 		47ED84AB26C842C6003817AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1C7E700A26DB0EE8002E8E72 /* Utility */,
 				1C7E700026DB06FB002E8E72 /* ButtonView */,
 			);
 			path = Components;
@@ -624,7 +652,9 @@
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
+				1C7E700926DB0E68002E8E72 /* ButtonViewStyle.swift in Sources */,
 				1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */,
+				1C7E700726DB0CF2002E8E72 /* ClosureTypes.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
 				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
@@ -632,12 +662,14 @@
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,
+				1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */,
 				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
+				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
 				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
