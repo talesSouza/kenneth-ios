@@ -6,10 +6,10 @@ class LoginViewController: BaseViewController {
     var viewModel: LoginViewModel = LoginViewModel()
     
     // MARK: - IBOutlets
-    @IBOutlet weak var forgotPasswordLabel: UILabel!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var loginButtonView: ButtonView!
+    @IBOutlet weak var forgotPasswordButtonView: ButtonView!
 }
 
 // MARK: - Life Cycle
@@ -17,7 +17,7 @@ extension LoginViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLayout()
+        setupButtons()
         setObserver()
     }
 }
@@ -33,13 +33,16 @@ extension LoginViewController {
     }
     
     private func changed(state: LoginViewState) {
+        
+        loginButtonView.isLoading(false)
+        
         switch state {
         case .started:
-            setLayout()
+            setupButtons()
         case .dataChanged:
-            loginButton.isEnabled = viewModel.isValidData
+            loginButtonView.isEnable(viewModel.isValidData)
         case .loading:
-            break
+            loginButtonView.isLoading(true)
         case .loginFailed:
             print("login failed")
         case .loginSucceeded:
@@ -48,25 +51,22 @@ extension LoginViewController {
     }
 }
 
-// MARK: - Local Methods
+// MARK: - Private Methods
 extension LoginViewController {
     
-    func setLayout() {
-        let text = "Esqueci minha senha"
-        forgotPasswordLabel.attributedText = text.setUnderlined()
-    }
-}
-
-// MARK: - IBActions
-extension LoginViewController {
-    
-    @IBAction private func loginTouchUpInside(_ sender: UIButton) {
+    private func setupButtons() {
         
-        if let email = emailTextField.text, !email.isEmpty,
-           let password = passwordTextField.text, !password.isEmpty {
-            viewModel.login()
-        } else {
-            print("Preencha os campos")
+        loginButtonView.set(title: "ENTRAR", style: .primary)
+        loginButtonView.isEnable(false)
+        loginButtonView.set { [weak self] in
+            guard let self = self else { return }
+            self.viewModel.login()
+        }
+        
+        forgotPasswordButtonView.set(title: "Esqueci minha senha", style: .underlined)
+        forgotPasswordButtonView.set { [weak self] in
+            guard let self = self else { return }
+            self.performSegue(withIdentifier: "goToForgotPassword", sender: self)
         }
     }
 }

@@ -47,14 +47,9 @@ extension LoginViewModel {
     
     func login() {
         guard let email = email, let password = password else { return }
-        
+        state = .loading
         service.postLogin(email: email, password: password) { response in
             self.state = response ? .loginSucceeded : .loginFailed
-//            if response == true {
-//                self.state = .loginSucceeded
-//            } else {
-//                self.state = .loginFailed
-//            }
         }
     }
 }
