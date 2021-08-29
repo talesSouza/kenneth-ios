@@ -29,12 +29,12 @@ extension OnboardingViewController {
 extension OnboardingViewController {
     
     private func setupButtons() {
-        loginButtonView.set(title: "ENTRAR", style: .primary)
+        loginButtonView.set(title: "onboarding.enter".localized, style: .primary)
         loginButtonView.set { [weak self] in
             guard let self = self else { return }
             self.performSegue(withIdentifier: "goToLogin", sender: self)
         }
-        registerButtonView.set(title: "CADASTRAR", style: .secondary)
+        registerButtonView.set(title: "onboarding.register".localized, style: .secondary)
         registerButtonView.set { [weak self] in
             guard let self = self else { return }
             self.performSegue(withIdentifier: "goToRegister", sender: self)
@@ -44,6 +44,7 @@ extension OnboardingViewController {
 
 // MARK: - Private Methods
 extension OnboardingViewController {
+    //TODO: Substituir por TextBuilder (criar let TextBuilder como propriedade e usar o buildText aqui passando o style)
     func setNavigationBarLayout() {
         if let text = UIFont(name: "SFProDisplay-Light", size: 20),
            let thisNavigation = self.navigationController {

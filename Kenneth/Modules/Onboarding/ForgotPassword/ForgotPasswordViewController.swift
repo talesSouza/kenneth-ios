@@ -16,6 +16,5 @@ extension ForgotPasswordViewController {
 // MARK: - IBActions
 extension ForgotPasswordViewController {
     @IBAction private func forgotPasswordTouchUpInside(_ sender: UIButton) {
-        
     }
 }
