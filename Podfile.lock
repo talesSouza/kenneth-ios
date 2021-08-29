@@ -1,16 +1,20 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.6)
+  - KeyValueStorage (2.0.1)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift (= 6.5.6)
+  - KeyValueStorage (~> 2.0)
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - KeyValueStorage
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeyValueStorage: 6ab6c8c2d404b1ac07da09684ec8723e66270d0d
 
-PODFILE CHECKSUM: b3f07975ecbf729f927999d51a3739e13d8270e6
+PODFILE CHECKSUM: a9d634a6d307f8c795979ff25e7d23d7b24cc333
 
 COCOAPODS: 1.10.2

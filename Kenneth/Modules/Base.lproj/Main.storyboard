@@ -24,7 +24,7 @@
         <!--Slider View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SliderViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sliderViewController" id="BYZ-38-t0r" customClass="SliderViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,13 +64,13 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tempo é dinheiro" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3DC-eh-TFJ">
-                                                                <rect key="frame" x="24" y="420" width="366" height="30.5"/>
+                                                                <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZ5-P9-kEj">
-                                                                <rect key="frame" x="70" y="466.5" width="274" height="151"/>
+                                                                <rect key="frame" x="70" y="467.5" width="274" height="155"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
@@ -126,13 +126,13 @@ c3NvIHR1ZG8gc2VtIHByZWNpc2FyIGlyIANhdMOpIHVtYSBhZ8OqbmNpYSBiYW5jw6FyaWEuA
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pague com cartão de crédito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aX-lc-JXd">
-                                                                <rect key="frame" x="24" y="420" width="366" height="30.5"/>
+                                                                <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0i-PV-4Of">
-                                                                <rect key="frame" x="70" y="466.5" width="274" height="176.5"/>
+                                                                <rect key="frame" x="70" y="467.5" width="274" height="155"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
@@ -189,13 +189,13 @@ dWl0YSByYXBpZGU
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça tudo com o Kenneth" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfH-Ep-WjQ">
-                                                                <rect key="frame" x="24" y="420" width="366" height="30.5"/>
+                                                                <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-5t-IBt">
-                                                                <rect key="frame" x="70" y="466.5" width="274" height="176.5"/>
+                                                                <rect key="frame" x="70" y="467.5" width="274" height="180.5"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
@@ -252,13 +252,13 @@ ZSByZXNnYXRlIGZvciBjb25jbHXDrWRvLg
                                                                 </userDefinedRuntimeAttributes>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pague com cartão de Crédito" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEa-En-BCy">
-                                                                <rect key="frame" x="24" y="420" width="366" height="30.5"/>
+                                                                <rect key="frame" x="24" y="420" width="366" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="26"/>
                                                                 <color key="textColor" name="Gold"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cyw-mN-WpQ">
-                                                                <rect key="frame" x="70" y="466.5" width="274" height="176.5"/>
+                                                                <rect key="frame" x="70" y="467.5" width="274" height="155"/>
                                                                 <attributedString key="attributedText">
                                                                     <fragment>
                                                                         <string key="content" base64-UTF8="YES">
@@ -312,39 +312,32 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="0r9-hg-IJA"/>
                                 </connections>
                             </scrollView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Xb-IU-GHb" customClass="ButtonView" customModule="Kenneth" customModuleProvider="target">
+                                <rect key="frame" x="40" y="767" width="334" height="55"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="2lo-kD-u4W"/>
+                                </constraints>
+                            </view>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ls7-5x-BSO">
                                 <rect key="frame" x="137.5" y="723.5" width="139" height="27.5"/>
                                 <color key="pageIndicatorTintColor" name="Gray"/>
                                 <color key="currentPageIndicatorTintColor" name="Gold"/>
                             </pageControl>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vic-pC-u2k">
-                                <rect key="frame" x="40" y="767" width="334" height="55"/>
-                                <color key="backgroundColor" name="Gold"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="LHo-dG-9fq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
-                                <state key="normal" title="START">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="1aZ-kc-DAH" kind="show" id="EWW-Sc-zjv"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Xb-IU-GHb" secondAttribute="trailing" constant="40" id="2OD-xk-LP3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ByW-YB-5yF" secondAttribute="bottom" id="AeO-K6-qRw"/>
+                            <constraint firstItem="9Xb-IU-GHb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="U2E-1b-W1Y"/>
                             <constraint firstItem="ByW-YB-5yF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VMi-ko-ao7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ByW-YB-5yF" secondAttribute="trailing" id="Vk3-3q-B4D"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vic-pC-u2k" secondAttribute="bottom" constant="40" id="Yx9-0Y-XgH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Xb-IU-GHb" secondAttribute="bottom" constant="40" id="bHn-he-PD8"/>
                             <constraint firstItem="ByW-YB-5yF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="e4f-1Z-SNl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vic-pC-u2k" secondAttribute="trailing" constant="40" id="hBL-eg-LOj"/>
-                            <constraint firstItem="Vic-pC-u2k" firstAttribute="top" secondItem="Ls7-5x-BSO" secondAttribute="bottom" constant="16" id="izn-kj-cSy"/>
-                            <constraint firstItem="Vic-pC-u2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jlC-Dw-74E"/>
                             <constraint firstItem="Ls7-5x-BSO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kaf-pv-6Ao"/>
                             <constraint firstItem="38A-rH-IaV" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="4" id="yGE-Fx-85p"/>
+                            <constraint firstItem="9Xb-IU-GHb" firstAttribute="top" secondItem="Ls7-5x-BSO" secondAttribute="bottom" constant="16" id="zRh-Lg-sZi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MtD-uR-DPd">
@@ -352,17 +345,18 @@ bSBzaW1wbGVzIGUgcsOhcGlkby4
                     </navigationItem>
                     <connections>
                         <outlet property="pageControl" destination="Ls7-5x-BSO" id="TZy-UM-WMe"/>
-                        <outlet property="startButton" destination="Vic-pC-u2k" id="Hfr-MT-Bha"/>
+                        <outlet property="startButtonView" destination="9Xb-IU-GHb" id="qCE-Sf-rcM"/>
+                        <segue destination="1aZ-kc-DAH" kind="show" identifier="goToOnboarding" id="L02-yt-OFi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="291" y="88"/>
+            <point key="canvasLocation" x="289.85507246376812" y="87.723214285714278"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="1kF-vF-jQ4">
             <objects>
-                <viewController id="1aZ-kc-DAH" customClass="OnboardingViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboardingViewController" id="1aZ-kc-DAH" customClass="OnboardingViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a5D-bL-aMc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

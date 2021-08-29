@@ -1,3 +1,6 @@
+// MARK: - Slider
+"slider.enter" = "ENTRAR";
+
 // MARK: - Onboarding
 "onboarding.enter" = "ENTRAR";
 "onboarding.register" = "CADASTRAR";

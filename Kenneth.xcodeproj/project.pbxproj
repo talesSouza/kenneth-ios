@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595726C83E9200F5B148 /* AppDelegate.swift */; };
-		1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595926C83E9200F5B148 /* SceneDelegate.swift */; };
 		1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595B26C83E9200F5B148 /* SliderViewController.swift */; };
 		1C53595F26C83E9200F5B148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53595D26C83E9200F5B148 /* Main.storyboard */; };
 		1C53596126C83E9400F5B148 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C53596026C83E9400F5B148 /* Assets.xcassets */; };
@@ -32,7 +31,10 @@
 		1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700E26DB1156002E8E72 /* TextBuilder.swift */; };
 		1C7E701226DB3602002E8E72 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7E701126DB3602002E8E72 /* ButtonView.xib */; };
 		1C7E701426DB3DE5002E8E72 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E701326DB3DE5002E8E72 /* UIViewController+Extensions.swift */; };
-		1C8A328D26DBB40D00724324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C8A328C26DBB40D00724324 /* Localizable.strings */; };
+		1C8A328E26DBB75400724324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C8A329026DBB75400724324 /* Localizable.strings */; };
+		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
+		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
+		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
@@ -68,7 +70,6 @@
 		0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C53595426C83E9200F5B148 /* Kenneth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenneth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53595726C83E9200F5B148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C53595926C83E9200F5B148 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1C53595B26C83E9200F5B148 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		1C53595E26C83E9200F5B148 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C53596026C83E9400F5B148 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,7 +98,10 @@
 		1C7E700E26DB1156002E8E72 /* TextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBuilder.swift; sourceTree = "<group>"; };
 		1C7E701126DB3602002E8E72 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		1C7E701326DB3DE5002E8E72 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
-		1C8A328C26DBB40D00724324 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1C8A328F26DBB75400724324 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
+		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
+		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -214,7 +218,6 @@
 			isa = PBXGroup;
 			children = (
 				1C53595726C83E9200F5B148 /* AppDelegate.swift */,
-				1C53595926C83E9200F5B148 /* SceneDelegate.swift */,
 				1C53596526C83E9400F5B148 /* Info.plist */,
 			);
 			path = App;
@@ -224,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				1C53595B26C83E9200F5B148 /* SliderViewController.swift */,
+				1C8A329426DBD2C700724324 /* SliderViewModel.swift */,
+				1C8A329626DBD37800724324 /* SliderViewState.swift */,
 			);
 			path = Slider;
 			sourceTree = "<group>";
@@ -333,6 +338,14 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		1C8A329126DBC47600724324 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		472EB4D626DAF84200937B7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,7 +361,7 @@
 				47ED84A926C842BA003817AD /* Fonts */,
 				1C53596026C83E9400F5B148 /* Assets.xcassets */,
 				1C53596226C83E9400F5B148 /* LaunchScreen.storyboard */,
-				1C8A328C26DBB40D00724324 /* Localizable.strings */,
+				1C8A329026DBB75400724324 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -367,6 +380,7 @@
 		47ED84AA26C842C0003817AD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				1C8A329126DBC47600724324 /* Others */,
 				47ED84B026C842F2003817AD /* Foundation */,
 				47ED84B126C842F7003817AD /* UIKit */,
 			);
@@ -537,7 +551,7 @@
 				1C53596126C83E9400F5B148 /* Assets.xcassets in Resources */,
 				47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */,
 				47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */,
-				1C8A328D26DBB40D00724324 /* Localizable.strings in Resources */,
+				1C8A328E26DBB75400724324 /* Localizable.strings in Resources */,
 				47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */,
 				47ED84B926C84CEF003817AD /* SF-Pro-Display-Regular.otf in Resources */,
 				1C7E701226DB3602002E8E72 /* ButtonView.xib in Resources */,
@@ -670,6 +684,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
+				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
+				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
 				1C7E700926DB0E68002E8E72 /* ButtonViewStyle.swift in Sources */,
 				1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */,
@@ -680,10 +696,10 @@
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
+				1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */,
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,
 				1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */,
-				1C53595A26C83E9200F5B148 /* SceneDelegate.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
@@ -742,6 +758,14 @@
 				1C53596326C83E9400F5B148 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1C8A329026DBB75400724324 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C8A328F26DBB75400724324 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
