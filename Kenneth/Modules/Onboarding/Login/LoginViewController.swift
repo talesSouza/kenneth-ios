@@ -44,7 +44,7 @@ extension LoginViewController {
         case .loading:
             loginButtonView.isLoading(true)
         case .loginFailed:
-            print("login failed")
+            showSimpleAlert(message: "Login falhou!")
         case .loginSucceeded:
             print("login succeeded")
         }
