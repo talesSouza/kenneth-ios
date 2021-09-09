@@ -56,14 +56,14 @@ extension LoginViewController {
     
     private func setupButtons() {
         
-        loginButtonView.set(title: "ENTRAR", style: .primary)
+        loginButtonView.set(title: "login.enter".localized, style: .primary)
         loginButtonView.isEnable(false)
         loginButtonView.set { [weak self] in
             guard let self = self else { return }
             self.viewModel.login()
         }
         
-        forgotPasswordButtonView.set(title: "Esqueci minha senha", style: .underlined)
+        forgotPasswordButtonView.set(title: "login.forgotpassword".localized, style: .underlined)
         forgotPasswordButtonView.set { [weak self] in
             guard let self = self else { return }
             self.performSegue(withIdentifier: "goToForgotPassword", sender: self)
