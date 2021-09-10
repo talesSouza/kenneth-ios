@@ -35,8 +35,13 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
+		1CA25A0726EB973B00294B64 /* LabelViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA25A0626EB973B00294B64 /* LabelViewStyle.swift */; };
 		1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5C426EAFF160060A713 /* LabelView.swift */; };
 		1CADF5C726EAFF1C0060A713 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADF5C626EAFF1C0060A713 /* LabelView.xib */; };
+		1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5C826EB01D70060A713 /* ForgotPasswordViewModel.swift */; };
+		1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5CA26EB07460060A713 /* ForgotPasswordViewState.swift */; };
+		1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5CD26EB07990060A713 /* ResetPasswordService.swift */; };
+		1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
@@ -104,8 +109,13 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
+		1CA25A0626EB973B00294B64 /* LabelViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelViewStyle.swift; sourceTree = "<group>"; };
 		1CADF5C426EAFF160060A713 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		1CADF5C626EAFF1C0060A713 /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
+		1CADF5C826EB01D70060A713 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		1CADF5CA26EB07460060A713 /* ForgotPasswordViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewState.swift; sourceTree = "<group>"; };
+		1CADF5CD26EB07990060A713 /* ResetPasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordService.swift; sourceTree = "<group>"; };
+		1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetServiceProtocol.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -270,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */,
+				1CADF5C826EB01D70060A713 /* ForgotPasswordViewModel.swift */,
+				1CADF5CA26EB07460060A713 /* ForgotPasswordViewState.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -285,6 +297,7 @@
 		1C7E6FF826DA89E0002E8E72 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				1CADF5CC26EB078A0060A713 /* ForgotPassword */,
 				1C7E6FFB26DA8D05002E8E72 /* Login */,
 			);
 			path = Service;
@@ -355,9 +368,19 @@
 			isa = PBXGroup;
 			children = (
 				1CADF5C426EAFF160060A713 /* LabelView.swift */,
+				1CA25A0626EB973B00294B64 /* LabelViewStyle.swift */,
 				1CADF5C626EAFF1C0060A713 /* LabelView.xib */,
 			);
 			path = LabelView;
+			sourceTree = "<group>";
+		};
+		1CADF5CC26EB078A0060A713 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1CADF5CD26EB07990060A713 /* ResetPasswordService.swift */,
+				1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		472EB4D626DAF84200937B7E /* Models */ = {
@@ -699,6 +722,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
+				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
+				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
 				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
@@ -722,7 +747,10 @@
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,
+				1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */,
+				1CA25A0726EB973B00294B64 /* LabelViewStyle.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
+				1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
 				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
 			);

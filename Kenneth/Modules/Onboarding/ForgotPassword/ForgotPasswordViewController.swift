@@ -4,17 +4,27 @@ class ForgotPasswordViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet private var emailTextField: UITextField!
+    @IBOutlet private var resetPasswordButtonView: ButtonView!
 }
 
 // MARK: - Life Cycle
 extension ForgotPasswordViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupButtons()
     }
 }
 
-// MARK: - IBActions
+// MARK: - Private Methods
 extension ForgotPasswordViewController {
-    @IBAction private func forgotPasswordTouchUpInside(_ sender: UIButton) {
+    
+    private func setupButtons() {
+        
+        resetPasswordButtonView.set(title: "forgotpassword.reset".localized, style: .primary)
+        resetPasswordButtonView.isEnable(false)
+        resetPasswordButtonView.set { [weak self] in
+            guard let self = self else { return }
+//            self.viewModel.login()
+        }
     }
 }

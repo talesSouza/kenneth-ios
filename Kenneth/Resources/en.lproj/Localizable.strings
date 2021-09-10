@@ -1,5 +1,14 @@
 // MARK: - Slider
 "slider.enter" = "ENTRAR";
+"slider.title1" = "Tempo é dinheiro";
+"slider.description1" = "No Kenneth você pode resgatar com praticidade suas ordens de pagamento da Justiça Estadual, Federal ou do Trabalho. Isso tudo sem precisar ir até uma agência bancária.";
+"slider.title2" = "Pague com cartão de crédito";
+"slider.description2" = "Utilize cartão de crédito para pagar a tarifa de serviço do Kenneth com segurança e agilidade. O pagamento é processado imediatamente, permitindo que o serviço inicie com muita rapidez.";
+"slider.title3" = "Faça tudo com o Kenneth";
+"slider.description3" = "Fique tranquilo e deixe o Kenneth cuidar do resgate das ordens de pagamento para você. Acompanhe o histórico das ordens de pagamento e receba notificações quando o processo de resgate for concluído.";
+"slider.title4" = "Sem burocracia";
+"slider.description4" = "Ir até uma agência bancária, carregando uma pasta cheia de papéis é coisa do passado. Com o Kenneth todo processo de resgate é digital e feito através do smartphone, bem simples e rápido.";
+
 
 // MARK: - Onboarding
 "onboarding.enter" = "ENTRAR";
@@ -10,4 +19,4 @@
 "login.forgotpassword" = "Esqueci minha senha";
 
 // MARK: - Forgot Password
-"" = "";
+"forgotpassword.reset" = "RESET PASSWORD";

@@ -9,6 +9,12 @@ class SliderViewController: BaseViewController {
     
     @IBOutlet private var slide1TitleLabelView: LabelView!
     @IBOutlet private var slide1DescriptionLabelView: LabelView!
+    @IBOutlet private var slide2TitleLabelView: LabelView!
+    @IBOutlet private var slide2DescriptionLabelView: LabelView!
+    @IBOutlet private var slide3TitleLabelView: LabelView!
+    @IBOutlet private var slide3DescriptionLabelView: LabelView!
+    @IBOutlet private var slide4TitleLabelView: LabelView!
+    @IBOutlet private var slide4DescriptionLabelView: LabelView!
     
     @IBOutlet private var startButtonView: ButtonView!
     @IBOutlet private var pageControl: UIPageControl!
@@ -41,6 +47,7 @@ extension SliderViewController {
         switch state {
         case .started:
             setupButtons()
+            setupLabels()
         case .finishedSlider:
             goToOnboarding()
         }
@@ -57,6 +64,17 @@ extension SliderViewController {
             guard let self = self else { return }
             self.viewModel.setFinishedTutorial()
         }
+    }
+    
+    private func setupLabels() {
+        slide1TitleLabelView.set(text: "slider.title1".localized, textStyle: .primary)
+        slide1DescriptionLabelView.set(text: "slider.description1".localized, textStyle: .secondary)
+        slide2TitleLabelView.set(text: "slider.title2".localized, textStyle: .primary)
+        slide2DescriptionLabelView.set(text: "slider.description2".localized, textStyle: .secondary)
+        slide3TitleLabelView.set(text: "slider.title3".localized, textStyle: .primary)
+        slide3DescriptionLabelView.set(text: "slider.description3".localized, textStyle: .secondary)
+        slide4TitleLabelView.set(text: "slider.title4".localized, textStyle: .primary)
+        slide4DescriptionLabelView.set(text: "slider.description4".localized, textStyle: .secondary)
     }
     
     private func goToOnboarding() {
