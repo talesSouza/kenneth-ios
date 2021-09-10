@@ -1,6 +1,7 @@
 import UIKit
 
 enum ButtonViewStyle {
+    
     case primary
     case secondary
     case underlined

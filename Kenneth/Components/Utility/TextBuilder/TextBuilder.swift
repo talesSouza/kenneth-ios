@@ -3,6 +3,7 @@ import UIKit
 class TextBuilder {
     
     func buildText(text: String, style: TextStyle) -> NSAttributedString {
+        
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = style.aligment
         

@@ -35,6 +35,8 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
+		1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5C426EAFF160060A713 /* LabelView.swift */; };
+		1CADF5C726EAFF1C0060A713 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADF5C626EAFF1C0060A713 /* LabelView.xib */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
@@ -102,6 +104,8 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
+		1CADF5C426EAFF160060A713 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		1CADF5C626EAFF1C0060A713 /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -333,6 +337,7 @@
 		1C7E701026DB33BB002E8E72 /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				1CADF5C326EAFF070060A713 /* LabelView */,
 				1C7E700026DB06FB002E8E72 /* ButtonView */,
 			);
 			path = Text;
@@ -344,6 +349,15 @@
 				1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		1CADF5C326EAFF070060A713 /* LabelView */ = {
+			isa = PBXGroup;
+			children = (
+				1CADF5C426EAFF160060A713 /* LabelView.swift */,
+				1CADF5C626EAFF1C0060A713 /* LabelView.xib */,
+			);
+			path = LabelView;
 			sourceTree = "<group>";
 		};
 		472EB4D626DAF84200937B7E /* Models */ = {
@@ -548,6 +562,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C53596426C83E9400F5B148 /* LaunchScreen.storyboard in Resources */,
+				1CADF5C726EAFF1C0060A713 /* LabelView.xib in Resources */,
 				1C53596126C83E9400F5B148 /* Assets.xcassets in Resources */,
 				47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */,
 				47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */,
@@ -703,6 +718,7 @@
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
+				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,

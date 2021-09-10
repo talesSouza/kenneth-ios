@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Kenneth
-//
-//  Created by Tales Silveira de Souza on 14/08/21.
-//
-
 import UIKit
 
 class SliderViewController: BaseViewController {
@@ -13,6 +6,10 @@ class SliderViewController: BaseViewController {
     let viewModel: SliderViewModel = SliderViewModel()
     
     // MARK: - IBOutlets
+    
+    @IBOutlet private var slide1TitleLabelView: LabelView!
+    @IBOutlet private var slide1DescriptionLabelView: LabelView!
+    
     @IBOutlet private var startButtonView: ButtonView!
     @IBOutlet private var pageControl: UIPageControl!
 }

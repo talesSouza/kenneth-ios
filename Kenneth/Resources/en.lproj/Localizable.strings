@@ -5,10 +5,9 @@
 "onboarding.enter" = "ENTRAR";
 "onboarding.register" = "CADASTRAR";
 
+// MARK: - Login
+"login.enter" = "ENTRAR";
+"login.forgotpassword" = "Esqueci minha senha";
+
 // MARK: - Forgot Password
-"" = "";
-"" = "";
-"" = "";
-"" = "";
-"" = "";
 "" = "";

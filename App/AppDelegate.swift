@@ -31,6 +31,7 @@ extension AppDelegate {
 extension AppDelegate {
     
     private func setInitialViewController() {
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         guard let navigation = storyboard.instantiateInitialViewController() as? UINavigationController else { return }

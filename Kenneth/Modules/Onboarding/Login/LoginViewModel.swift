@@ -23,9 +23,6 @@ class LoginViewModel {
     init(service: LoginServiceProtocol = LoginService()) {
         self.service = service
     }
-//    init(service: LoginServiceProtocol? = nil) {
-//        self.service = service ?? LoginService()
-//    }
 }
 
 // MARK: - Sets
