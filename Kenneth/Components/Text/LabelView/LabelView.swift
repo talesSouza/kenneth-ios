@@ -18,7 +18,7 @@ class LabelView: UIView, NibOwnerLoadable {
 // MARK: - Public Methods
 extension LabelView {
     
-    func set(text: String, textStyle: LabelViewStyle = .primary) {
-        label.attributedText = textBuilder.buildText(text: text, style: textStyle.textStyle)
+    func set(text: String, textStyle: TextStyle = TextStyle()) {
+        label.attributedText = textBuilder.buildText(text: text, style: textStyle)
     }
 }

@@ -67,14 +67,17 @@ extension SliderViewController {
     }
     
     private func setupLabels() {
-        slide1TitleLabelView.set(text: "slider.title1".localized, textStyle: .primary)
-        slide1DescriptionLabelView.set(text: "slider.description1".localized, textStyle: .secondary)
-        slide2TitleLabelView.set(text: "slider.title2".localized, textStyle: .primary)
-        slide2DescriptionLabelView.set(text: "slider.description2".localized, textStyle: .secondary)
-        slide3TitleLabelView.set(text: "slider.title3".localized, textStyle: .primary)
-        slide3DescriptionLabelView.set(text: "slider.description3".localized, textStyle: .secondary)
-        slide4TitleLabelView.set(text: "slider.title4".localized, textStyle: .primary)
-        slide4DescriptionLabelView.set(text: "slider.description4".localized, textStyle: .secondary)
+        let titleText = TextStyle(weight: .bold, aligment: .center)
+        let descriptionText = TextStyle(color: .grayLight, size: .p12, weight: .light, aligment: .center)
+        
+        slide1TitleLabelView.set(text: "slider.title1".localized, textStyle: titleText)
+        slide1DescriptionLabelView.set(text: "slider.description1".localized, textStyle: descriptionText)
+        slide2TitleLabelView.set(text: "slider.title2".localized, textStyle: titleText)
+        slide2DescriptionLabelView.set(text: "slider.description2".localized, textStyle: descriptionText)
+        slide3TitleLabelView.set(text: "slider.title3".localized, textStyle: titleText)
+        slide3DescriptionLabelView.set(text: "slider.description3".localized, textStyle: descriptionText)
+        slide4TitleLabelView.set(text: "slider.title4".localized, textStyle: titleText)
+        slide4DescriptionLabelView.set(text: "slider.description4".localized, textStyle: descriptionText)
     }
     
     private func goToOnboarding() {

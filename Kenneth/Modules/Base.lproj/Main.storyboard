@@ -13,9 +13,6 @@
         <array key="SF-Pro-Display-Regular.otf">
             <string>SFProDisplay-Regular</string>
         </array>
-        <array key="SF-Pro-Display-Semibold.otf">
-            <string>SFProDisplay-Semibold</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Slider View Controller-->
@@ -540,6 +537,9 @@
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" textContentType="name"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="rtz-6g-91y" id="dQf-Ke-Uli"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" name="GrayLight"/>
@@ -559,6 +559,9 @@
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="rtz-6g-91y" id="CMb-K7-2NJ"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" name="GrayLight"/>
@@ -582,6 +585,9 @@
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="rtz-6g-91y" id="st7-7r-W4k"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" name="GrayLight"/>
@@ -606,6 +612,9 @@
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="rtz-6g-91y" id="WHK-Kr-RVQ"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" name="GrayLight"/>
@@ -618,20 +627,13 @@
                                                     <constraint firstItem="aBP-36-zbA" firstAttribute="top" secondItem="oVg-6l-N7l" secondAttribute="top" id="qlN-Oa-NQ1"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sc3-M8-WLe" userLabel="Sign Up">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gx-1W-k2G" customClass="ButtonView" customModule="Kenneth" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="320" width="334" height="60"/>
-                                                <color key="backgroundColor" name="Gold"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="gzZ-op-45z"/>
+                                                    <constraint firstAttribute="height" constant="60" id="oDS-PP-9Wr"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="14"/>
-                                                <state key="normal" title="CADASTRAR">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="registerTouchUpInside:" destination="rtz-6g-91y" eventType="touchUpInside" id="Jdt-XV-KkQ"/>
-                                                </connections>
-                                            </button>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -664,6 +666,7 @@
                         <outlet property="nameTextField" destination="8w3-QF-jZX" id="Jvk-DN-iUY"/>
                         <outlet property="passwordConfirmTextField" destination="aBP-36-zbA" id="iIX-RU-l7d"/>
                         <outlet property="passwordTextField" destination="qHO-vO-xlX" id="7ac-Hl-5Hr"/>
+                        <outlet property="registerButtonView" destination="7Gx-1W-k2G" id="tkg-IA-yJp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="II4-7B-smE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

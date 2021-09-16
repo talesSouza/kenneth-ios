@@ -20,3 +20,6 @@
 
 // MARK: - Forgot Password
 "forgotpassword.reset" = "RESET PASSWORD";
+
+// MARK: - Onboarding
+"register.register" = "CADASTRAR";
