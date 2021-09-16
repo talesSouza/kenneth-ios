@@ -44,7 +44,7 @@ extension RegisterViewController {
         case .registerFailed:
             showSimpleAlert(message: "Registro falhou!")
         case .registerSucceeded:
-            print("Registro completo!")
+            goToHome()
         }
     }
 }
@@ -59,6 +59,10 @@ extension RegisterViewController {
             guard let self = self else { return }
             self.viewModel.register()
         }
+    }
+    
+    private func goToHome() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 }
 
