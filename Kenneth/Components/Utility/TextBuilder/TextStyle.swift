@@ -1,6 +1,10 @@
 import UIKit
 
 enum TextBuilderFontSize: CGFloat {
+    case p24 = 24
+    case p20 = 20
+    case p18 = 18
+    case p16 = 16
     case p14 = 14
     case p12 = 12
 }

@@ -1,7 +1,7 @@
 import UIKit
 
 class LoginViewController: BaseViewController {
-
+    
     // MARK: - Dependencies
     var viewModel: LoginViewModel = LoginViewModel()
     
@@ -46,13 +46,20 @@ extension LoginViewController {
         case .loginFailed:
             showSimpleAlert(message: "Login falhou!")
         case .loginSucceeded:
-            print("login succeeded")
+            goToHome()
         }
     }
 }
 
 // MARK: - Private Methods
 extension LoginViewController {
+    
+    private func goToHome() {
+        self.performSegue(withIdentifier: "goToHome", sender: self)
+        if let thisNavigation = self.navigationController {
+        thisNavigation.isNavigationBarHidden = true
+        }
+    }
     
     private func setupButtons() {
         

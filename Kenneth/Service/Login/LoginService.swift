@@ -8,7 +8,7 @@ class LoginService: LoginServiceProtocol {
         
         let seconds = 2.0
         DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
-            completion(false)
+            completion(true)
         }
     }
 }

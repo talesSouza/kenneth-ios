@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1C3CB68726F3723D0065D5A3 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68626F3723D0065D5A3 /* RegisterService.swift */; };
 		1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */; };
+		1C3CB69026F3CA130065D5A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */; };
 		1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595726C83E9200F5B148 /* AppDelegate.swift */; };
 		1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595B26C83E9200F5B148 /* SliderViewController.swift */; };
 		1C53595F26C83E9200F5B148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53595D26C83E9200F5B148 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */; };
 		1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */; };
 		1C6CA7F626F2B652008C71E2 /* RegisterViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */; };
+		1C7DD0D826F4CB67005D2F56 /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */; };
 		1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */; };
 		1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF926DA89F0002E8E72 /* LoginService.swift */; };
 		1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */; };
@@ -47,6 +49,9 @@
 		1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
+		1CE207F926F79E61007436CF /* FederalJusticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */; };
+		1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */; };
+		1CF704FC26F76B56004C415E /* FederalJusticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
 		47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */; };
@@ -80,6 +85,7 @@
 		0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C3CB68626F3723D0065D5A3 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServiceProtocol.swift; sourceTree = "<group>"; };
+		1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C53595426C83E9200F5B148 /* Kenneth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenneth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53595726C83E9200F5B148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C53595B26C83E9200F5B148 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewState.swift; sourceTree = "<group>"; };
+		1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1C7E6FF926DA89F0002E8E72 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
@@ -124,6 +131,9 @@
 		1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetServiceProtocol.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewModel.swift; sourceTree = "<group>"; };
+		1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewState.swift; sourceTree = "<group>"; };
+		1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
 		472EB4D726DAF85300937B7E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +196,15 @@
 				1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		1C3CB68A26F3C9D10065D5A3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1C7DD0D626F4CB59005D2F56 /* Home */,
+				1C7DD0D526F4CB49005D2F56 /* PaymentType */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		1C53594B26C83E9200F5B148 = {
@@ -271,6 +290,23 @@
 				1C7E6FF726DA849B002E8E72 /* Register */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1C7DD0D526F4CB49005D2F56 /* PaymentType */ = {
+			isa = PBXGroup;
+			children = (
+				1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */,
+				1CF704FA26F76B3E004C415E /* FederalJustice */,
+			);
+			path = PaymentType;
+			sourceTree = "<group>";
+		};
+		1C7DD0D626F4CB59005D2F56 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		1C7E6FF226DA840A002E8E72 /* Login */ = {
@@ -400,6 +436,16 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
+		1CF704FA26F76B3E004C415E /* FederalJustice */ = {
+			isa = PBXGroup;
+			children = (
+				1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */,
+				1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */,
+				1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */,
+			);
+			path = FederalJustice;
+			sourceTree = "<group>";
+		};
 		472EB4D626DAF84200937B7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,9 +499,10 @@
 		47ED84AC26C842DA003817AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1C53595D26C83E9200F5B148 /* Main.storyboard */,
+				1C3CB68A26F3C9D10065D5A3 /* Home */,
 				1C63B3F126C88ECE00A77284 /* Onboarding */,
 				1C63B3EE26C867C900A77284 /* Slider */,
-				1C53595D26C83E9200F5B148 /* Main.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -742,6 +789,7 @@
 				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,
+				1CF704FC26F76B56004C415E /* FederalJusticeViewController.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
 				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
@@ -751,6 +799,7 @@
 				1C6CA7F626F2B652008C71E2 /* RegisterViewState.swift in Sources */,
 				1C7E700726DB0CF2002E8E72 /* ClosureTypes.swift in Sources */,
 				1C3CB68726F3723D0065D5A3 /* RegisterService.swift in Sources */,
+				1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
 				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
@@ -758,6 +807,7 @@
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
 				1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */,
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
+				1C3CB69026F3CA130065D5A3 /* HomeViewController.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,
 				1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
@@ -772,6 +822,8 @@
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
+				1CE207F926F79E61007436CF /* FederalJusticeViewModel.swift in Sources */,
+				1C7DD0D826F4CB67005D2F56 /* PaymentTypeViewController.swift in Sources */,
 				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -23,3 +23,19 @@
 
 // MARK: - Onboarding
 "register.register" = "CADASTRAR";
+
+// MARK: - Home
+"home.description" = "Você ainda não iniciou um resgate de \n Ordem de Pagamento ou Requisição de \n Pequeno Valor. Pressione o botão Iniciar \n Resgate para começar agora";
+"home.startWithdraw" = "INICIAR RESGATE";
+
+// MARK: - Payment Type
+"paymenttype.federal" = "Justiça Federal";
+"paymenttype.state" = "Justiça Estadual";
+"paymenttype.labor" = "Justiça Trabalhista";
+"paymenttype.choosetype" = "Escolha o tipo \n da sua ordem de Pagamento";
+
+// MARK: - Federal Justice
+"federalJustice.documentation" = "Documentação";
+"federalJustice.bankaccount" = "Conta Bancária";
+"federalJustice.creditcard" = "Cartão de Crédito";
+"federalJustice.next" = "PRÓXIMO";

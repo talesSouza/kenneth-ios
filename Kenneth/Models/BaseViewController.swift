@@ -25,4 +25,22 @@ extension BaseViewController {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
     }
+    
+    public func setNavigationBarLayout() {
+        if let text = UIFont(name: "SFProDisplay-Light", size: 20),
+           let thisNavigation = self.navigationController,
+           let topItem = thisNavigation.navigationBar.topItem {
+            thisNavigation.navigationBar.titleTextAttributes = [
+                NSAttributedString.Key.font: text,
+                NSAttributedString.Key.foregroundColor: UIColor.gold]
+            
+            let yourBackImage = UIImage(named: "arrow")
+            thisNavigation.navigationBar.backIndicatorImage = yourBackImage
+            thisNavigation.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
+            
+            let backButton = UIBarButtonItem()
+             backButton.title = ""
+             topItem.backBarButtonItem = backButton
+        }
+    }
 }
