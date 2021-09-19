@@ -35,7 +35,19 @@
 "paymenttype.choosetype" = "Escolha o tipo \n da sua ordem de Pagamento";
 
 // MARK: - Federal Justice
-"federalJustice.documentation" = "Documentação";
-"federalJustice.bankaccount" = "Conta Bancária";
-"federalJustice.creditcard" = "Cartão de Crédito";
-"federalJustice.next" = "PRÓXIMO";
+"federaljustice.documentation" = "Documentação";
+"federaljustice.bankaccount" = "Conta Bancária";
+"federaljustice.creditcard" = "Cartão de Crédito";
+"federaljustice.next" = "PRÓXIMO";
+
+// MARK: - State Justice
+"statejustice.documentation" = "Documentação";
+"statejustice.bankaccount" = "Conta Bancária";
+"statejustice.creditcard" = "Cartão de Crédito";
+"statejustice.next" = "PRÓXIMO";
+
+// MARK: - Labor Justice
+"laborjustice.documentation" = "Documentação";
+"laborjustice.bankaccount" = "Conta Bancária";
+"laborjustice.creditcard" = "Cartão de Crédito";
+"laborjustice.next" = "PRÓXIMO";
