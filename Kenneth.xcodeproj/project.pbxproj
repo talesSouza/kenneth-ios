@@ -51,6 +51,8 @@
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
 		1CE207F926F79E61007436CF /* FederalJusticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */; };
 		1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */; };
+		1CE207FE26F7A07E007436CF /* PaymentOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */; };
+		1CE2080026F7A08B007436CF /* PaymentOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */; };
 		1CF704FC26F76B56004C415E /* FederalJusticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
@@ -133,6 +135,8 @@
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewModel.swift; sourceTree = "<group>"; };
 		1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewState.swift; sourceTree = "<group>"; };
+		1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOrderService.swift; sourceTree = "<group>"; };
+		1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOrderProtocol.swift; sourceTree = "<group>"; };
 		1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -350,9 +354,10 @@
 		1C7E6FF826DA89E0002E8E72 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1C3CB68526F3721E0065D5A3 /* Register */,
+				1CE207FC26F7A05C007436CF /* PaymentOrder */,
 				1CADF5CC26EB078A0060A713 /* ForgotPassword */,
 				1C7E6FFB26DA8D05002E8E72 /* Login */,
+				1C3CB68526F3721E0065D5A3 /* Register */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -434,6 +439,15 @@
 				1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */,
 			);
 			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		1CE207FC26F7A05C007436CF /* PaymentOrder */ = {
+			isa = PBXGroup;
+			children = (
+				1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */,
+				1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */,
+			);
+			path = PaymentOrder;
 			sourceTree = "<group>";
 		};
 		1CF704FA26F76B3E004C415E /* FederalJustice */ = {
@@ -802,6 +816,7 @@
 				1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
 				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
+				1CE2080026F7A08B007436CF /* PaymentOrderProtocol.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
@@ -815,6 +830,7 @@
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
+				1CE207FE26F7A07E007436CF /* PaymentOrderService.swift in Sources */,
 				1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,

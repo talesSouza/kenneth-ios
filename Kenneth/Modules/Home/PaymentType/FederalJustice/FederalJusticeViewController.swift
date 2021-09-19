@@ -2,6 +2,9 @@ import UIKit
 
 class FederalJusticeViewController: BaseViewController {
     
+    // MARK: - Dependencies
+    let viewModel: FederalJusticeViewModel = FederalJusticeViewModel()
+    
     // MARK: - IBOutlets
     @IBOutlet weak var paymentOrderNumberTextField: UITextField!
     @IBOutlet weak var ticketTextField: UITextField!
@@ -30,7 +33,7 @@ extension FederalJusticeViewController {
     private func setViews() {
         centralCardsView.forEach {
             //unica cor q encaixou
-            $0.borderColor = .systemGray5
+            $0.borderColor = .grayLight
             $0.borderWidth = 1
         }
     }

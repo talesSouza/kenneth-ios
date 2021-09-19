@@ -1052,7 +1052,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="eyi-zw-UJh"/>
                                                             <constraint firstAttribute="width" constant="334" id="waW-Lp-pHB"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
@@ -1077,7 +1077,7 @@
                                                             <constraint firstAttribute="height" constant="60" id="TDX-Bk-H7X"/>
                                                             <constraint firstAttribute="width" constant="334" id="iF5-sQ-uSH"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                 </subviews>
