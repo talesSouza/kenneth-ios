@@ -14,6 +14,7 @@ class RegisterViewModel {
     private var email: String?
     private var password: String?
     private var passwordConfirm: String?
+    var requestMessage = ""
     
     // MARK: - Computed Properties
     var isValidData: Bool {
@@ -63,7 +64,14 @@ extension RegisterViewModel {
               let password = password,
               let confirmPassword = passwordConfirm else { return }
         state = .loading
-        service.postRegister(name: name, email: email, password: password, confirmPassword: confirmPassword) { response in
+        
+        if password != confirmPassword {
+            requestMessage = "Passwords doesn't match"
+            state = .registerFailed
+            return
+        }
+        
+        service.postRegister(name: name, email: email, password: password) { response in
             self.state = response ? .registerSucceeded : .registerFailed
         }
     }

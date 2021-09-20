@@ -5,7 +5,6 @@ class RegisterService: RegisterServiceProtocol {
     func postRegister(name: String,
                       email: String,
                       password: String,
-                      confirmPassword: String,
                       completion: @escaping ((Bool) -> Void)) {
         
         let seconds = 2.0

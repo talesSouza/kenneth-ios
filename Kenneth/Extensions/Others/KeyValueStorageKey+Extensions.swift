@@ -9,4 +9,7 @@ extension KeyValueStorageKey {
     static let token = KeyValueStorageKey(type: .keychain, value: "token")
     static let isLogged = KeyValueStorageKey(type: .keychain, value: "isLogged")
     static let userEmail = KeyValueStorageKey(type: .keychain, value: "userEmail")
+    
+    // MARK: - Home
+    static let chosenPaymentType = KeyValueStorageKey(type: .memory, value: "chosenPaymentType")
 }

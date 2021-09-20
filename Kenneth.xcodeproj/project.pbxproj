@@ -368,9 +368,9 @@
 		1C7E6FF826DA89E0002E8E72 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				1CE207FC26F7A05C007436CF /* PaymentOrder */,
 				1CADF5CC26EB078A0060A713 /* ForgotPassword */,
 				1C7E6FFB26DA8D05002E8E72 /* Login */,
+				1CE207FC26F7A05C007436CF /* PaymentOrder */,
 				1C3CB68526F3721E0065D5A3 /* Register */,
 			);
 			path = Service;
@@ -528,8 +528,8 @@
 		47ED84AA26C842C0003817AD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				1C8A329126DBC47600724324 /* Others */,
 				47ED84B026C842F2003817AD /* Foundation */,
+				1C8A329126DBC47600724324 /* Others */,
 				47ED84B126C842F7003817AD /* UIKit */,
 			);
 			path = Extensions;

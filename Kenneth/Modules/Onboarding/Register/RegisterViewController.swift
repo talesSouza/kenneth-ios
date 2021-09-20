@@ -42,7 +42,7 @@ extension RegisterViewController {
         case .loading:
             registerButtonView.isLoading(true)
         case .registerFailed:
-            showSimpleAlert(message: "Registro falhou!")
+            showSimpleAlert(message: viewModel.requestMessage)
         case .registerSucceeded:
             goToRoot()
         }

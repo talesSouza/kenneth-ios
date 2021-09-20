@@ -25,8 +25,13 @@ extension BaseViewController {
         cancellables.forEach { $0.cancel() }
         cancellables.removeAll()
     }
+}
+
+// MARK: - NavigationBar
+extension BaseViewController {
     
     public func setNavigationBarLayout() {
+        
         if let text = UIFont(name: "SFProDisplay-Light", size: 20),
            let thisNavigation = self.navigationController,
            let topItem = thisNavigation.navigationBar.topItem {
