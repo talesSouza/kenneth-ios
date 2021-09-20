@@ -11,6 +11,7 @@ class LabelView: UIView, NibOwnerLoadable {
     // MARK: - Initializers
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        backgroundColor = .clear
         self.loadNibContent()
     }
 }

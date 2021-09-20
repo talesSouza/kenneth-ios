@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1C3CB68726F3723D0065D5A3 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68626F3723D0065D5A3 /* RegisterService.swift */; };
 		1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */; };
-		1C3CB69026F3CA130065D5A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */; };
 		1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595726C83E9200F5B148 /* AppDelegate.swift */; };
 		1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C53595B26C83E9200F5B148 /* SliderViewController.swift */; };
 		1C53595F26C83E9200F5B148 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C53595D26C83E9200F5B148 /* Main.storyboard */; };
@@ -24,7 +23,6 @@
 		1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */; };
 		1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */; };
 		1C6CA7F626F2B652008C71E2 /* RegisterViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */; };
-		1C7DD0D826F4CB67005D2F56 /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */; };
 		1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */; };
 		1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF926DA89F0002E8E72 /* LoginService.swift */; };
 		1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */; };
@@ -41,6 +39,9 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
+		1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */; };
+		1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */; };
+		1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */; };
 		1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5C426EAFF160060A713 /* LabelView.swift */; };
 		1CADF5C726EAFF1C0060A713 /* LabelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CADF5C626EAFF1C0060A713 /* LabelView.xib */; };
 		1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5C826EB01D70060A713 /* ForgotPasswordViewModel.swift */; };
@@ -49,17 +50,9 @@
 		1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */; };
 		1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */; };
 		1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */; };
-		1CE207F926F79E61007436CF /* FederalJusticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */; };
-		1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */; };
-		1CE207FE26F7A07E007436CF /* PaymentOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */; };
-		1CE2080026F7A08B007436CF /* PaymentOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */; };
-		1CE2080426F7A941007436CF /* LaborJusticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080326F7A941007436CF /* LaborJusticeViewController.swift */; };
-		1CE2080626F7A94A007436CF /* StateJusticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080526F7A94A007436CF /* StateJusticeViewController.swift */; };
-		1CE2080826F7A967007436CF /* LaborJusticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080726F7A967007436CF /* LaborJusticeViewModel.swift */; };
-		1CE2080A26F7A970007436CF /* LaborJusticeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080926F7A970007436CF /* LaborJusticeViewState.swift */; };
-		1CE2080C26F7A979007436CF /* StateJusticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080B26F7A979007436CF /* StateJusticeViewModel.swift */; };
-		1CE2080E26F7A981007436CF /* StateJusticeViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE2080D26F7A981007436CF /* StateJusticeViewState.swift */; };
-		1CF704FC26F76B56004C415E /* FederalJusticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */; };
+		1CE207F926F79E61007436CF /* CreateOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207F826F79E61007436CF /* CreateOrderViewModel.swift */; };
+		1CE207FB26F79E6F007436CF /* CreateOrderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FA26F79E6F007436CF /* CreateOrderViewState.swift */; };
+		1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF704FB26F76B56004C415E /* CreateOrderViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
 		47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */; };
@@ -93,7 +86,6 @@
 		0A945E7A74E43298A718111E /* Pods-Kenneth-KennethUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.debug.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C3CB68626F3723D0065D5A3 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterServiceProtocol.swift; sourceTree = "<group>"; };
-		1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1C53595426C83E9200F5B148 /* Kenneth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kenneth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C53595726C83E9200F5B148 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C53595B26C83E9200F5B148 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +106,6 @@
 		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewState.swift; sourceTree = "<group>"; };
-		1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1C7E6FF926DA89F0002E8E72 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		1C7E6FFC26DA8D0F002E8E72 /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
@@ -131,6 +122,9 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
+		1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
+		1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
+		1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoView.xib; sourceTree = "<group>"; };
 		1CADF5C426EAFF160060A713 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		1CADF5C626EAFF1C0060A713 /* LabelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelView.xib; sourceTree = "<group>"; };
 		1CADF5C826EB01D70060A713 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
@@ -139,17 +133,9 @@
 		1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetServiceProtocol.swift; sourceTree = "<group>"; };
 		1CCA4EDE26C9553A000A3214 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1CCA4EE026C95550000A3214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewModel.swift; sourceTree = "<group>"; };
-		1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewState.swift; sourceTree = "<group>"; };
-		1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOrderService.swift; sourceTree = "<group>"; };
-		1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOrderProtocol.swift; sourceTree = "<group>"; };
-		1CE2080326F7A941007436CF /* LaborJusticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborJusticeViewController.swift; sourceTree = "<group>"; };
-		1CE2080526F7A94A007436CF /* StateJusticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateJusticeViewController.swift; sourceTree = "<group>"; };
-		1CE2080726F7A967007436CF /* LaborJusticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborJusticeViewModel.swift; sourceTree = "<group>"; };
-		1CE2080926F7A970007436CF /* LaborJusticeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaborJusticeViewState.swift; sourceTree = "<group>"; };
-		1CE2080B26F7A979007436CF /* StateJusticeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateJusticeViewModel.swift; sourceTree = "<group>"; };
-		1CE2080D26F7A981007436CF /* StateJusticeViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateJusticeViewState.swift; sourceTree = "<group>"; };
-		1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FederalJusticeViewController.swift; sourceTree = "<group>"; };
+		1CE207F826F79E61007436CF /* CreateOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewModel.swift; sourceTree = "<group>"; };
+		1CE207FA26F79E6F007436CF /* CreateOrderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewState.swift; sourceTree = "<group>"; };
+		1CF704FB26F76B56004C415E /* CreateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateOrderViewController.swift; sourceTree = "<group>"; };
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
 		472EB4D726DAF85300937B7E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -212,15 +198,6 @@
 				1C3CB68826F372470065D5A3 /* RegisterServiceProtocol.swift */,
 			);
 			path = Register;
-			sourceTree = "<group>";
-		};
-		1C3CB68A26F3C9D10065D5A3 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1C7DD0D626F4CB59005D2F56 /* Home */,
-				1C7DD0D526F4CB49005D2F56 /* PaymentType */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		1C53594B26C83E9200F5B148 = {
@@ -308,25 +285,6 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		1C7DD0D526F4CB49005D2F56 /* PaymentType */ = {
-			isa = PBXGroup;
-			children = (
-				1C7DD0D726F4CB67005D2F56 /* PaymentTypeViewController.swift */,
-				1CF704FA26F76B3E004C415E /* FederalJustice */,
-				1CE2080226F7A920007436CF /* LaborJustice */,
-				1CE2080126F7A918007436CF /* StateJustice */,
-			);
-			path = PaymentType;
-			sourceTree = "<group>";
-		};
-		1C7DD0D626F4CB59005D2F56 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1C3CB68F26F3CA130065D5A3 /* HomeViewController.swift */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		1C7E6FF226DA840A002E8E72 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -370,7 +328,6 @@
 			children = (
 				1CADF5CC26EB078A0060A713 /* ForgotPassword */,
 				1C7E6FFB26DA8D05002E8E72 /* Login */,
-				1CE207FC26F7A05C007436CF /* PaymentOrder */,
 				1C3CB68526F3721E0065D5A3 /* Register */,
 			);
 			path = Service;
@@ -437,6 +394,50 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		1CAC8A0926F8D7E300C4749D /* PaymentOrders */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
+				1CAC8A0C26F8D89800C4749D /* PaymentType */,
+			);
+			path = PaymentOrders;
+			sourceTree = "<group>";
+		};
+		1CAC8A0C26F8D89800C4749D /* PaymentType */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */,
+			);
+			path = PaymentType;
+			sourceTree = "<group>";
+		};
+		1CAC8A0D26F8DBDD00C4749D /* CreateOrder */ = {
+			isa = PBXGroup;
+			children = (
+				1CF704FB26F76B56004C415E /* CreateOrderViewController.swift */,
+				1CE207F826F79E61007436CF /* CreateOrderViewModel.swift */,
+				1CE207FA26F79E6F007436CF /* CreateOrderViewState.swift */,
+			);
+			path = CreateOrder;
+			sourceTree = "<group>";
+		};
+		1CAC8A0F26F8FB2F00C4749D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC8A1026F8FB3700C4749D /* OrderInfo */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1CAC8A1026F8FB3700C4749D /* OrderInfo */ = {
+			isa = PBXGroup;
+			children = (
+				1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */,
+				1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */,
+			);
+			path = OrderInfo;
+			sourceTree = "<group>";
+		};
 		1CADF5C326EAFF070060A713 /* LabelView */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,45 +454,6 @@
 				1CADF5CF26EB07A40060A713 /* ResetServiceProtocol.swift */,
 			);
 			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		1CE207FC26F7A05C007436CF /* PaymentOrder */ = {
-			isa = PBXGroup;
-			children = (
-				1CE207FD26F7A07E007436CF /* PaymentOrderService.swift */,
-				1CE207FF26F7A08B007436CF /* PaymentOrderProtocol.swift */,
-			);
-			path = PaymentOrder;
-			sourceTree = "<group>";
-		};
-		1CE2080126F7A918007436CF /* StateJustice */ = {
-			isa = PBXGroup;
-			children = (
-				1CE2080526F7A94A007436CF /* StateJusticeViewController.swift */,
-				1CE2080B26F7A979007436CF /* StateJusticeViewModel.swift */,
-				1CE2080D26F7A981007436CF /* StateJusticeViewState.swift */,
-			);
-			path = StateJustice;
-			sourceTree = "<group>";
-		};
-		1CE2080226F7A920007436CF /* LaborJustice */ = {
-			isa = PBXGroup;
-			children = (
-				1CE2080326F7A941007436CF /* LaborJusticeViewController.swift */,
-				1CE2080726F7A967007436CF /* LaborJusticeViewModel.swift */,
-				1CE2080926F7A970007436CF /* LaborJusticeViewState.swift */,
-			);
-			path = LaborJustice;
-			sourceTree = "<group>";
-		};
-		1CF704FA26F76B3E004C415E /* FederalJustice */ = {
-			isa = PBXGroup;
-			children = (
-				1CF704FB26F76B56004C415E /* FederalJusticeViewController.swift */,
-				1CE207F826F79E61007436CF /* FederalJusticeViewModel.swift */,
-				1CE207FA26F79E6F007436CF /* FederalJusticeViewState.swift */,
-			);
-			path = FederalJustice;
 			sourceTree = "<group>";
 		};
 		472EB4D626DAF84200937B7E /* Models */ = {
@@ -538,6 +500,7 @@
 		47ED84AB26C842C6003817AD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1CAC8A0F26F8FB2F00C4749D /* UI */,
 				1C7E701026DB33BB002E8E72 /* Text */,
 				1C7E700A26DB0EE8002E8E72 /* Utility */,
 			);
@@ -547,10 +510,10 @@
 		47ED84AC26C842DA003817AD /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				1C53595D26C83E9200F5B148 /* Main.storyboard */,
-				1C3CB68A26F3C9D10065D5A3 /* Home */,
+				1CAC8A0926F8D7E300C4749D /* PaymentOrders */,
 				1C63B3F126C88ECE00A77284 /* Onboarding */,
 				1C63B3EE26C867C900A77284 /* Slider */,
+				1C53595D26C83E9200F5B148 /* Main.storyboard */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -698,6 +661,7 @@
 			files = (
 				1C53596426C83E9400F5B148 /* LaunchScreen.storyboard in Resources */,
 				1CADF5C726EAFF1C0060A713 /* LabelView.xib in Resources */,
+				1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */,
 				1C53596126C83E9400F5B148 /* Assets.xcassets in Resources */,
 				47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */,
 				47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */,
@@ -836,10 +800,8 @@
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
-				1CE2080426F7A941007436CF /* LaborJusticeViewController.swift in Sources */,
-				1CE2080626F7A94A007436CF /* StateJusticeViewController.swift in Sources */,
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,
-				1CF704FC26F76B56004C415E /* FederalJusticeViewController.swift in Sources */,
+				1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
 				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
@@ -849,18 +811,15 @@
 				1C6CA7F626F2B652008C71E2 /* RegisterViewState.swift in Sources */,
 				1C7E700726DB0CF2002E8E72 /* ClosureTypes.swift in Sources */,
 				1C3CB68726F3723D0065D5A3 /* RegisterService.swift in Sources */,
-				1CE207FB26F79E6F007436CF /* FederalJusticeViewState.swift in Sources */,
+				1CE207FB26F79E6F007436CF /* CreateOrderViewState.swift in Sources */,
 				1C53595C26C83E9200F5B148 /* SliderViewController.swift in Sources */,
 				1C7E6FFF26DAAAA9002E8E72 /* LoginViewState.swift in Sources */,
-				1CE2080026F7A08B007436CF /* PaymentOrderProtocol.swift in Sources */,
+				1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */,
 				1C53595826C83E9200F5B148 /* AppDelegate.swift in Sources */,
 				1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */,
-				1CE2080C26F7A979007436CF /* StateJusticeViewModel.swift in Sources */,
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
 				1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */,
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
-				1CE2080E26F7A981007436CF /* StateJusticeViewState.swift in Sources */,
-				1C3CB69026F3CA130065D5A3 /* HomeViewController.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,
 				1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
@@ -868,18 +827,15 @@
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
-				1CE207FE26F7A07E007436CF /* PaymentOrderService.swift in Sources */,
 				1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */,
-				1CE2080826F7A967007436CF /* LaborJusticeViewModel.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,
+				1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */,
 				1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
-				1CE2080A26F7A970007436CF /* LaborJusticeViewState.swift in Sources */,
 				1CADF5D026EB07A40060A713 /* ResetServiceProtocol.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
-				1CE207F926F79E61007436CF /* FederalJusticeViewModel.swift in Sources */,
-				1C7DD0D826F4CB67005D2F56 /* PaymentTypeViewController.swift in Sources */,
+				1CE207F926F79E61007436CF /* CreateOrderViewModel.swift in Sources */,
 				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

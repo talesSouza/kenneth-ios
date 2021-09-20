@@ -1,10 +1,12 @@
 import Foundation
 import Combine
+import KeyValueStorage
 
 class LoginViewModel {
     
     // MARK: - Dependecies
     let service: LoginServiceProtocol
+    let storage: KeyValueStorageProtocol
     
     // MARK: Published Properties
     @Published var state: LoginViewState = .started
@@ -20,8 +22,10 @@ class LoginViewModel {
     }
     
     // MARK: - Initializers
-    init(service: LoginServiceProtocol = LoginService()) {
+    init(service: LoginServiceProtocol = LoginService(),
+         storage: KeyValueStorageProtocol = KeyValueStorage()) {
         self.service = service
+        self.storage = storage
     }
 }
 
@@ -46,7 +50,13 @@ extension LoginViewModel {
         guard let email = email, let password = password else { return }
         state = .loading
         service.postLogin(email: email, password: password) { response in
-            self.state = response ? .loginSucceeded : .loginFailed
+            if response {
+                self.storage.set(value: true, for: .isLogged)
+                self.storage.set(value: email, for: .userEmail)
+                self.state = .loginSucceeded
+            } else {
+                self.state = .loginFailed
+            }
         }
     }
 }

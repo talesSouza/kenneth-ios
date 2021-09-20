@@ -1,10 +1,8 @@
 import Foundation
 
-enum LaborJusticeViewState {
+enum CreateOrderViewState {
     
     case started
     case dataChanged
     case loading
-    case loginSucceeded
-    case loginFailed
 }

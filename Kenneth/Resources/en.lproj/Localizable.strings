@@ -29,25 +29,13 @@
 "home.startWithdraw" = "INICIAR RESGATE";
 
 // MARK: - Payment Type
-"paymenttype.federal" = "Justiça Federal";
-"paymenttype.state" = "Justiça Estadual";
-"paymenttype.labor" = "Justiça Trabalhista";
-"paymenttype.choosetype" = "Escolha o tipo \n da sua ordem de Pagamento";
+"paymentType.federal" = "Justiça Federal";
+"paymentType.state" = "Justiça Estadual";
+"paymentType.labor" = "Justiça Trabalhista";
+"paymentType.choosetype" = "Escolha o tipo \n da sua ordem de Pagamento";
 
-// MARK: - Federal Justice
-"federaljustice.documentation" = "Documentação";
-"federaljustice.bankaccount" = "Conta Bancária";
-"federaljustice.creditcard" = "Cartão de Crédito";
-"federaljustice.next" = "PRÓXIMO";
-
-// MARK: - State Justice
-"statejustice.documentation" = "Documentação";
-"statejustice.bankaccount" = "Conta Bancária";
-"statejustice.creditcard" = "Cartão de Crédito";
-"statejustice.next" = "PRÓXIMO";
-
-// MARK: - Labor Justice
-"laborjustice.documentation" = "Documentação";
-"laborjustice.bankaccount" = "Conta Bancária";
-"laborjustice.creditcard" = "Cartão de Crédito";
-"laborjustice.next" = "PRÓXIMO";
+// MARK: - Create Order
+"createOrder.documentation" = "Documentação";
+"createOrder.bankaccount" = "Conta Bancária";
+"createOrder.creditcard" = "Cartão de Crédito";
+"createOrder.next" = "PRÓXIMO";
