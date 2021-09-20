@@ -1,19 +1,15 @@
 import Foundation
 import Combine
+import Resolver
 import KeyValueStorage
 
 class SliderViewModel {
     
     // MARK: - Dependencies
-    let storage: KeyValueStorageProtocol
+    @LazyInjected var storage: KeyValueStorageProtocol
     
     // MARK: - Published Properties
     @Published var state: SliderViewState = .started
-    
-    // MARK: - Initializers
-    init(storage: KeyValueStorageProtocol = KeyValueStorage()) {
-        self.storage = storage
-    }
 }
 
 // MARK: - Public Methods

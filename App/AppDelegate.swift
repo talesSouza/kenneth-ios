@@ -1,16 +1,21 @@
 import UIKit
 import IQKeyboardManagerSwift
 import KeyValueStorage
+import Resolver
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    // MARK: - Dependencies
+    @LazyInjected var storage: KeyValueStorageProtocol
+    
+    // MARK: - Stored Properties
     var window: UIWindow?
-    let storage: KeyValueStorageProtocol = KeyValueStorage()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         IQKeyboardManager.shared.enable = true
         
+        setupAppDependencies()
         setInitialViewController()
         
         return true
@@ -24,6 +29,11 @@ extension AppDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
+    }
+    
+    private func setupAppDependencies() {
+        let appDependencies = AppDependencies()
+        appDependencies.setup()
     }
 }
 

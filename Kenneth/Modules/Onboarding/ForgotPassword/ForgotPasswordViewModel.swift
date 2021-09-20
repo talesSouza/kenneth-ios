@@ -1,10 +1,11 @@
 import Foundation
 import Combine
+import Resolver
 
 class ForgotPasswordViewModel {
     
     // MARK: - Dependecies
-    let service: ResetPasswordServiceProtocol
+    @LazyInjected var service: ResetPasswordServiceProtocol
     
     // MARK: Published Properties
     @Published var state: ForgotPasswordViewState = .started
@@ -16,11 +17,6 @@ class ForgotPasswordViewModel {
     var isValidData: Bool {
         guard let email = email else { return false }
         return !email.isEmpty
-    }
-    
-    // MARK: - Initializers
-    init(service: ResetPasswordServiceProtocol = ResetPasswordService()) {
-        self.service = service
     }
 }
 

@@ -1,0 +1,3 @@
+protocol ModuleDependencies {
+    func setupDependencies()
+}

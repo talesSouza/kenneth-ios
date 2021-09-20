@@ -1,10 +1,11 @@
 import Foundation
 import Combine
+import Resolver
 
 class RegisterViewModel {
     
     // MARK: - Dependencies
-    let service: RegisterServiceProtocol
+    @LazyInjected var service: RegisterServiceProtocol
     
     // MARK: - Published Properties
     @Published var state: RegisterViewState = .started
@@ -23,11 +24,6 @@ class RegisterViewModel {
               let password = password,
               let confirmPassword = passwordConfirm else { return false }
         return !name.isEmpty && !email.isEmpty && !password.isEmpty && !confirmPassword.isEmpty
-    }
-    
-    // MARK: - Initializers
-    init(service: RegisterServiceProtocol = RegisterService()) {
-        self.service = service
     }
 }
 

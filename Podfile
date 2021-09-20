@@ -7,7 +7,8 @@ target 'Kenneth' do
   # Pods for Kenneth
   pod 'IQKeyboardManagerSwift', '6.5.6'
   pod 'KeyValueStorage', '~> 2.0'
-
+  pod "Resolver", '1.4'
+  
   target 'KennethTests' do
     inherit! :search_paths
     

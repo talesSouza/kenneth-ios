@@ -1,12 +1,13 @@
 import Foundation
 import Combine
+import Resolver
 import KeyValueStorage
 
 class LoginViewModel {
     
     // MARK: - Dependecies
-    let service: LoginServiceProtocol
-    let storage: KeyValueStorageProtocol
+    @LazyInjected var service: LoginServiceProtocol
+    @LazyInjected var storage: KeyValueStorageProtocol
     
     // MARK: Published Properties
     @Published var state: LoginViewState = .started
@@ -19,13 +20,6 @@ class LoginViewModel {
     var isValidData: Bool {
         guard let email = email, let password = password else { return false }
         return !email.isEmpty && !password.isEmpty
-    }
-    
-    // MARK: - Initializers
-    init(service: LoginServiceProtocol = LoginService(),
-         storage: KeyValueStorageProtocol = KeyValueStorage()) {
-        self.service = service
-        self.storage = storage
     }
 }
 
