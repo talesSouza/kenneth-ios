@@ -9,8 +9,6 @@ class AppDependencies {
                                             ForgotPasswordModuleDependencies(),
                                             RegisterModuleDependencies()]
         
-        for module in dependencies {
-            module.setupDependencies()
-        }
+        dependencies.forEach { $0.setupDependencies() }
     }
 }
