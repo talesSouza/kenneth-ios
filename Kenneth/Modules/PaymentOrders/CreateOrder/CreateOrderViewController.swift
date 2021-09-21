@@ -30,6 +30,7 @@ extension CreateOrderViewController {
 extension CreateOrderViewController {
     
     private func setupLayout() {
+        setNavigationBarLayout()
         setupOrderInfos()
         setupButtons()
     }
@@ -38,7 +39,7 @@ extension CreateOrderViewController {
         documentOrderInfoView.set(title: "createOrder.documentation".localized)
         documentOrderInfoView.set { [weak self] in
             guard let self = self else { return }
-            self.performSegue(withIdentifier: "", sender: self)
+            self.performSegue(withIdentifier: "goToDocumentsRegister", sender: self)
         }
         
         bankAccountOrderInfoView.set(title: "createOrder.bankaccount".localized)

@@ -39,6 +39,7 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
+		1C8C641D26FA143400D72CB1 /* DocumentsRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */; };
 		1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */; };
 		1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */; };
 		1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */; };
@@ -128,6 +129,7 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
+		1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsRegistrationViewController.swift; sourceTree = "<group>"; };
 		1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
 		1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoView.xib; sourceTree = "<group>"; };
@@ -409,9 +411,18 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
+		1C8C641B26FA132100D72CB1 /* Documents Registration */ = {
+			isa = PBXGroup;
+			children = (
+				1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */,
+			);
+			path = "Documents Registration";
+			sourceTree = "<group>";
+		};
 		1CAC8A0926F8D7E300C4749D /* PaymentOrders */ = {
 			isa = PBXGroup;
 			children = (
+				1C8C641B26FA132100D72CB1 /* Documents Registration */,
 				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
 				1CAC8A0C26F8D89800C4749D /* PaymentType */,
 			);
@@ -881,6 +892,7 @@
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
+				1C8C641D26FA143400D72CB1 /* DocumentsRegistrationViewController.swift in Sources */,
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1CAC8A1E26F90FB000C4749D /* LoginModuleDependencies.swift in Sources */,
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,

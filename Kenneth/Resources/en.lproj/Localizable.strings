@@ -39,3 +39,13 @@
 "createOrder.bankaccount" = "Conta Bancária";
 "createOrder.creditcard" = "Cartão de Crédito";
 "createOrder.next" = "PRÓXIMO";
+
+// MARK: - Documents Registration
+"documentsRegistration.title" = "Escolha o tipo \n de documento para cadastrar";
+"documentsRegistration.subtitle" = "Apenas Documentos Originais e dentro da validade serão aceitos";
+"documentsRegistration.titleID" = "RG";
+"documentsRegistration.subtitleID" = "Documento de identidade";
+"documentsRegistration.titleDriver" = "CNH";
+"documentsRegistration.subtitleDriver" = "Carteira de motorista";
+"documentsRegistration.titleLawyer" = "OAB";
+"documentsRegistration.subtitleLawyer" = "Carteira da Ordem de Advogados do Brasil";
