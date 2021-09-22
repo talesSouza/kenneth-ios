@@ -40,6 +40,9 @@
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
 		1C8C641D26FA143400D72CB1 /* DocumentsRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */; };
+		1C8C642726FA951600D72CB1 /* InfoFillingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642626FA951600D72CB1 /* InfoFillingViewController.swift */; };
+		1C8C642926FA952C00D72CB1 /* InfoFillingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642826FA952C00D72CB1 /* InfoFillingViewModel.swift */; };
+		1C8C642B26FA953500D72CB1 /* InfoFillingViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642A26FA953500D72CB1 /* InfoFillingViewState.swift */; };
 		1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */; };
 		1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */; };
 		1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */; };
@@ -130,6 +133,9 @@
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
 		1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsRegistrationViewController.swift; sourceTree = "<group>"; };
+		1C8C642626FA951600D72CB1 /* InfoFillingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFillingViewController.swift; sourceTree = "<group>"; };
+		1C8C642826FA952C00D72CB1 /* InfoFillingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFillingViewModel.swift; sourceTree = "<group>"; };
+		1C8C642A26FA953500D72CB1 /* InfoFillingViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoFillingViewState.swift; sourceTree = "<group>"; };
 		1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
 		1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoView.xib; sourceTree = "<group>"; };
@@ -411,18 +417,29 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		1C8C641B26FA132100D72CB1 /* Documents Registration */ = {
+		1C8C641B26FA132100D72CB1 /* DocumentsRegistration */ = {
 			isa = PBXGroup;
 			children = (
 				1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */,
 			);
-			path = "Documents Registration";
+			path = DocumentsRegistration;
+			sourceTree = "<group>";
+		};
+		1C8C642526FA94FE00D72CB1 /* InfoFilling */ = {
+			isa = PBXGroup;
+			children = (
+				1C8C642626FA951600D72CB1 /* InfoFillingViewController.swift */,
+				1C8C642826FA952C00D72CB1 /* InfoFillingViewModel.swift */,
+				1C8C642A26FA953500D72CB1 /* InfoFillingViewState.swift */,
+			);
+			path = InfoFilling;
 			sourceTree = "<group>";
 		};
 		1CAC8A0926F8D7E300C4749D /* PaymentOrders */ = {
 			isa = PBXGroup;
 			children = (
-				1C8C641B26FA132100D72CB1 /* Documents Registration */,
+				1C8C642526FA94FE00D72CB1 /* InfoFilling */,
+				1C8C641B26FA132100D72CB1 /* DocumentsRegistration */,
 				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
 				1CAC8A0C26F8D89800C4749D /* PaymentType */,
 			);
@@ -898,6 +915,7 @@
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,
 				1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
+				1C8C642926FA952C00D72CB1 /* InfoFillingViewModel.swift in Sources */,
 				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
 				1C7E700926DB0E68002E8E72 /* ButtonViewStyle.swift in Sources */,
@@ -927,11 +945,13 @@
 				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CAC8A2C26F9133D00C4749D /* CoreModuleDependencies.swift in Sources */,
+				1C8C642B26FA953500D72CB1 /* InfoFillingViewState.swift in Sources */,
 				1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,
 				1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */,
 				1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */,
+				1C8C642726FA951600D72CB1 /* InfoFillingViewController.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
 				1CADF5D026EB07A40060A713 /* ResetPasswordServiceProtocol.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,

@@ -52,6 +52,6 @@ extension DocumentsRegistrationViewController {
 // MARK: - IBActions
 extension DocumentsRegistrationViewController {
     @IBAction func documentType(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "goToInfosFilling", sender: self)
     }
 }

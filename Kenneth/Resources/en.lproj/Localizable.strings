@@ -49,3 +49,8 @@
 "documentsRegistration.subtitleDriver" = "Carteira de motorista";
 "documentsRegistration.titleLawyer" = "OAB";
 "documentsRegistration.subtitleLawyer" = "Carteira da Ordem de Advogados do Brasil";
+
+// MARK: - Info Filling
+"infoFilling.title" = "Digite os dados do seu \n documento de identidade";
+"infoFilling.validate" = "Validade";
+"infoFilling.loadDocuments" = "CARREGAR DOCUMENTOS";
