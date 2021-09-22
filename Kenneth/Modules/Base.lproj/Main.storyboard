@@ -1253,6 +1253,9 @@
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bl4-gB-GCU">
                                                 <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
+                                                <connections>
+                                                    <action selector="documentType:" destination="PV5-dZ-AeF" eventType="touchUpInside" id="ZmV-i3-sjB"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1607,9 +1610,21 @@
                                     <constraint firstAttribute="width" constant="60" id="WNq-hw-lmZ"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-6K-T8d" userLabel="cameraButton">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-Wb-lZw">
+                                <rect key="frame" x="137" y="251" width="140" height="140"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="08z-bh-2SQ"/>
+                                    <constraint firstAttribute="height" constant="140" id="iHt-Ne-X5D"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RTx-6K-T8d" userLabel="loadPhotoButton">
                                 <rect key="frame" x="137" y="247" width="140" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="loadPhotoTouchUpInside:" destination="7qO-Ay-Lr4" eventType="touchUpInside" id="Xxq-2i-1ko"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8ix-0X-gVl"/>
@@ -1624,9 +1639,11 @@
                             <constraint firstItem="8ix-0X-gVl" firstAttribute="trailing" secondItem="49z-QR-HbA" secondAttribute="trailing" constant="40" id="LUu-IU-6Dl"/>
                             <constraint firstItem="d0f-sP-Vdg" firstAttribute="centerX" secondItem="A7y-go-4ar" secondAttribute="centerX" id="M0W-Ti-Kx3"/>
                             <constraint firstItem="d0f-sP-Vdg" firstAttribute="top" secondItem="rzs-It-qCk" secondAttribute="bottom" constant="10" id="NA9-Oo-FAf"/>
+                            <constraint firstItem="SKu-Wb-lZw" firstAttribute="centerX" secondItem="A7y-go-4ar" secondAttribute="centerX" id="Q7j-Dd-FTR"/>
                             <constraint firstItem="Kw1-fH-6HM" firstAttribute="top" secondItem="49z-QR-HbA" secondAttribute="bottom" constant="20" id="VeD-uz-ezu"/>
                             <constraint firstItem="d0f-sP-Vdg" firstAttribute="leading" secondItem="8ix-0X-gVl" secondAttribute="leading" constant="40" id="W1r-sd-jeo"/>
                             <constraint firstItem="CCZ-cG-KwE" firstAttribute="centerX" secondItem="A7y-go-4ar" secondAttribute="centerX" id="cjE-WL-lAT"/>
+                            <constraint firstItem="SKu-Wb-lZw" firstAttribute="top" secondItem="d0f-sP-Vdg" secondAttribute="bottom" constant="12" id="r60-Ub-HNI"/>
                             <constraint firstItem="rzs-It-qCk" firstAttribute="centerX" secondItem="A7y-go-4ar" secondAttribute="centerX" id="uNp-4n-ui0"/>
                             <constraint firstItem="cn4-Xj-rPw" firstAttribute="centerX" secondItem="A7y-go-4ar" secondAttribute="centerX" id="vBg-nO-Shy"/>
                             <constraint firstItem="CCZ-cG-KwE" firstAttribute="top" secondItem="d0f-sP-Vdg" secondAttribute="bottom" constant="12" id="wbt-jT-HPM"/>
@@ -1637,6 +1654,7 @@
                         <outlet property="documentTextField" destination="vtF-CC-Azo" id="SGl-30-Wqy"/>
                         <outlet property="loadDocumentsButtonView" destination="Kw1-fH-6HM" id="roV-Rk-5Mk"/>
                         <outlet property="nameTextField" destination="ShM-03-L9c" id="2zW-Mm-J8r"/>
+                        <outlet property="photoImageView" destination="SKu-Wb-lZw" id="O3Y-MG-K2B"/>
                         <outlet property="titleLabelView" destination="d0f-sP-Vdg" id="WBc-xO-kYE"/>
                         <outlet property="validateLabelView" destination="R6F-TL-Xmg" id="Xbh-2H-57l"/>
                     </connections>
