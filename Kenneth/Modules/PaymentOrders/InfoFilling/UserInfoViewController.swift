@@ -1,9 +1,9 @@
 import UIKit
 
-class InfoFillingViewController: BaseViewController {
+class UserInfoViewController: BaseViewController {
     
     // MARK: - Dependencies
-    let viewModel: InfoFillingViewModel = InfoFillingViewModel()
+    let viewModel: UserInfoViewModel = UserInfoViewModel()
     
     // MARK: - IBOutlets
     @IBOutlet weak var titleLabelView: LabelView!
@@ -15,7 +15,7 @@ class InfoFillingViewController: BaseViewController {
 }
 
 // MARK: - Life Cycle
-extension InfoFillingViewController {
+extension UserInfoViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setNavigationBarLayout()
@@ -24,7 +24,7 @@ extension InfoFillingViewController {
 }
 
 // MARK: - Setup
-extension InfoFillingViewController {
+extension UserInfoViewController {
     
     func setupLayout() {
         setLabels()
@@ -48,42 +48,36 @@ extension InfoFillingViewController {
     }
 }
 
-// MARK: - UITextFieldDelegate
-extension InfoFillingViewController: UITextFieldDelegate {
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let text = textField.text {
-            if text == nameTextField.text {
-                viewModel.set(name: text)
-            } else if text == documentTextField.text {
-                viewModel.set(document: text)
-            }
-        }
-    }
-}
-
-// MARK: - IBActions
-extension InfoFillingViewController {
-    @IBAction func loadPhotoTouchUpInside(_ sender: UIButton) {
-        let alert = UIAlertController(title: "selecionar foto", message: "de onde você quer a foto?", preferredStyle: .actionSheet)
+// MARK: - Private Methods
+extension UserInfoViewController {
+    
+    // MARK: - openPhotoOptions Method
+    private func openPhotoOptions() {
+        let alert = UIAlertController(title: "infoFilling.selectPhoto".localized, message: "infoFilling.wichPhoto".localized, preferredStyle: .actionSheet)
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            let cameraAction = UIAlertAction(title: "Câmera", style: .default, handler: { (action) in
+            
+            // MARK: - Camera
+            let cameraAction = UIAlertAction(title: "infoFilling.camera".localized, style: .default, handler: { (action) in
                 self.selectPicture(sourceType: .camera)
             })
             alert.addAction(cameraAction)
         }
         
-        let libraryAction = UIAlertAction(title: "Biblioteca de fotos", style: .default, handler: { (action) in
+        // MARK: - Photos Library
+        let libraryAction = UIAlertAction(title: "infoFilling.photoLibrary".localized, style: .default, handler: { (action) in
             self.selectPicture(sourceType: .photoLibrary)
         })
         alert.addAction(libraryAction)
         
-        let photosAction = UIAlertAction(title: "Album de fotos", style: .default, handler: { (action) in
+        // MARK: - Photos Album
+        let photosAction = UIAlertAction(title: "infoFilling.photoAlbum".localized, style: .default, handler: { (action) in
             self.selectPicture(sourceType: .savedPhotosAlbum)
         })
         alert.addAction(photosAction)
         
-        let cancelAction = UIAlertAction(title: "Cancelar", style: .default, handler: nil)
+        // MARK: - Cancel
+        let cancelAction = UIAlertAction(title: "infoFilling.cancel".localized, style: .default, handler: nil)
         alert.addAction(cancelAction)
         
         present(alert, animated: true, completion: nil)
@@ -95,32 +89,45 @@ extension InfoFillingViewController {
         imagePicker.delegate = self
         present(imagePicker, animated: true, completion: nil)
     }
-   
 }
 
-// MARK: - UIPicker
-extension InfoFillingViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            let originalWidth = image.size.width
-            let aspectRatio = originalWidth / image.size.height
-            
-            var smallSize: CGSize
-            if aspectRatio > 1 {
-//                smallSize = CGSize(width: 140, height: 120/aspectRatio)
-                smallSize = CGSize(width: 140, height: 140)
-            } else {
-//                smallSize = CGSize(width: 120*aspectRatio, height: 120)
-                smallSize = CGSize(width: 140, height: 140)
+// MARK: - IBActions
+extension UserInfoViewController {
+    @IBAction func loadPhotoTouchUpInside(_ sender: UIButton) {
+        openPhotoOptions()
+    }
+}
+
+// MARK: - UITextFieldDelegate
+extension UserInfoViewController: UITextFieldDelegate {
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let text = textField.text {
+            if text == nameTextField.text {
+                viewModel.set(name: text)
+            } else if text == documentTextField.text {
+                viewModel.set(documentNumber: text)
             }
-            
+        }
+    }
+}
+
+// MARK: - UIImagePickerControllerDelegate & UINavigationControllerDelegate
+extension UserInfoViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let smallSize = CGSize(width: 140, height: 144)
             UIGraphicsBeginImageContext(smallSize)
             image.draw(in: CGRect(x: 0, y: 0, width: smallSize.width, height: smallSize.height))
             let smallImage = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             
-            dismiss(animated: true) { [self] in
-                photoImageView.image = smallImage
+            if let smallImage = smallImage {
+                dismiss(animated: true) { [self] in
+                    viewModel.set(photo: smallImage)
+                    photoImageView.image = smallImage
+                }
             }
         }
     }

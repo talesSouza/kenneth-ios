@@ -54,3 +54,9 @@
 "infoFilling.title" = "Digite os dados do seu \n documento de identidade";
 "infoFilling.validate" = "Validade";
 "infoFilling.loadDocuments" = "CARREGAR DOCUMENTOS";
+"infoFilling.selectPhoto" = "Selecionar foto";
+"infoFilling.wichPhoto" = "Escolha o local da foto";
+"infoFilling.camera" = "Câmera";
+"infoFilling.photoLibrary" = "Biblioteca";
+"infoFilling.photoAlbum" = "Album de fotos";
+"infoFilling.cancel" = "Cancelar";

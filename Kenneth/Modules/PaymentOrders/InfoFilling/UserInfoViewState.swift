@@ -1,6 +1,6 @@
 import Foundation
 
-enum InfoFillingViewState {
+enum UserInfoViewState {
     
     case started
     case dataChanged
