@@ -2,23 +2,13 @@ import UIKit
 
 struct User {
     
-    var name: String?
-    var documentNumber: String?
+    let name: String
+    let email: String
     var photo: UIImage?
+    
+    var orders: [PaymentOrder]
+    
+    var documents: [Document]
+    var creditCards: [CreditCard]
+    var bankAccounts: [BankAccount]
 }
-
-//// MARK: - Sets
-//extension User {
-//
-//    func set(name: String) {
-//        self.name = name
-//    }
-//
-//    func set(photo: UIImageView) {
-//        self.photo = photo
-//    }
-//
-//    func set(documentNumber: String) {
-//        self.documentNumber = documentNumber
-//    }
-//}

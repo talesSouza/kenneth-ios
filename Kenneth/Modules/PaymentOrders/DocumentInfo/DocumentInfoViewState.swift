@@ -1,8 +1,9 @@
 import Foundation
 
-enum UserInfoViewState {
+enum DocumentInfoViewState {
     
     case started
     case dataChanged
     case loading
+    case documentCreated
 }

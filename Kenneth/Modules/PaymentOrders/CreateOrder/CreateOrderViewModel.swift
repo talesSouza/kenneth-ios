@@ -6,8 +6,11 @@ class CreateOrderViewModel {
     @Published var state: CreateOrderViewState = .started
     
     // MARK: - Stored Properties
-    private var paymentOrderNumber: String?
-    private var tag: String?
+    var paymentOrderNumber: String?
+    var tag: String?
+    var document: Document?
+    var creditCard: CreditCard?
+    var bankAccount: BankAccount?
     
     // MARK: - Computed Properties
     var isValidData: Bool {

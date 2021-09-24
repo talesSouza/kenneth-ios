@@ -40,10 +40,10 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
-		1C8C641D26FA143400D72CB1 /* DocumentsRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */; };
-		1C8C642726FA951600D72CB1 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642626FA951600D72CB1 /* UserInfoViewController.swift */; };
-		1C8C642926FA952C00D72CB1 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642826FA952C00D72CB1 /* UserInfoViewModel.swift */; };
-		1C8C642B26FA953500D72CB1 /* UserInfoViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642A26FA953500D72CB1 /* UserInfoViewState.swift */; };
+		1C8C641D26FA143400D72CB1 /* DocumentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */; };
+		1C8C642726FA951600D72CB1 /* DocumentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */; };
+		1C8C642926FA952C00D72CB1 /* DocumentInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */; };
+		1C8C642B26FA953500D72CB1 /* DocumentInfoViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */; };
 		1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */; };
 		1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */; };
 		1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */; };
@@ -65,6 +65,10 @@
 		1CE207FB26F79E6F007436CF /* CreateOrderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE207FA26F79E6F007436CF /* CreateOrderViewState.swift */; };
 		1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CF704FB26F76B56004C415E /* CreateOrderViewController.swift */; };
 		472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472EB4D726DAF85300937B7E /* BaseViewController.swift */; };
+		47947A7226FD731500088D5C /* PaymentOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947A7126FD731500088D5C /* PaymentOrder.swift */; };
+		47947A7726FD731D00088D5C /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947A7626FD731D00088D5C /* Document.swift */; };
+		47947A7C26FD732400088D5C /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947A7B26FD732400088D5C /* CreditCard.swift */; };
+		47947A8126FD739300088D5C /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47947A8026FD739300088D5C /* BankAccount.swift */; };
 		47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106326C99967002EAAE9 /* String+Extensions.swift */; };
 		47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */; };
 		47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */; };
@@ -134,10 +138,10 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
-		1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsRegistrationViewController.swift; sourceTree = "<group>"; };
-		1C8C642626FA951600D72CB1 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
-		1C8C642826FA952C00D72CB1 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
-		1C8C642A26FA953500D72CB1 /* UserInfoViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewState.swift; sourceTree = "<group>"; };
+		1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTypeViewController.swift; sourceTree = "<group>"; };
+		1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewController.swift; sourceTree = "<group>"; };
+		1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewModel.swift; sourceTree = "<group>"; };
+		1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewState.swift; sourceTree = "<group>"; };
 		1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
 		1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoView.xib; sourceTree = "<group>"; };
@@ -161,6 +165,10 @@
 		1E436CB8A72983FE050C7799 /* Pods_Kenneth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kenneth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45CBE67566BA8A8A4B072117 /* Pods-Kenneth-KennethUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kenneth-KennethUITests.release.xcconfig"; path = "Target Support Files/Pods-Kenneth-KennethUITests/Pods-Kenneth-KennethUITests.release.xcconfig"; sourceTree = "<group>"; };
 		472EB4D726DAF85300937B7E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		47947A7126FD731500088D5C /* PaymentOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentOrder.swift; sourceTree = "<group>"; };
+		47947A7626FD731D00088D5C /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		47947A7B26FD732400088D5C /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		47947A8026FD739300088D5C /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		47CE106326C99967002EAAE9 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		47CE106B26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		47ED84B226C84CEF003817AD /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
@@ -419,31 +427,31 @@
 			path = Others;
 			sourceTree = "<group>";
 		};
-		1C8C641B26FA132100D72CB1 /* DocumentsRegistration */ = {
+		1C8C641B26FA132100D72CB1 /* DocumentType */ = {
 			isa = PBXGroup;
 			children = (
-				1C8C641C26FA143400D72CB1 /* DocumentsRegistrationViewController.swift */,
+				1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */,
 			);
-			path = DocumentsRegistration;
+			path = DocumentType;
 			sourceTree = "<group>";
 		};
-		1C8C642526FA94FE00D72CB1 /* InfoFilling */ = {
+		1C8C642526FA94FE00D72CB1 /* DocumentInfo */ = {
 			isa = PBXGroup;
 			children = (
-				1C8C642626FA951600D72CB1 /* UserInfoViewController.swift */,
-				1C8C642826FA952C00D72CB1 /* UserInfoViewModel.swift */,
-				1C8C642A26FA953500D72CB1 /* UserInfoViewState.swift */,
+				1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */,
+				1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */,
+				1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */,
 			);
-			path = InfoFilling;
+			path = DocumentInfo;
 			sourceTree = "<group>";
 		};
 		1CAC8A0926F8D7E300C4749D /* PaymentOrders */ = {
 			isa = PBXGroup;
 			children = (
-				1C8C642526FA94FE00D72CB1 /* InfoFilling */,
-				1C8C641B26FA132100D72CB1 /* DocumentsRegistration */,
-				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
 				1CAC8A0C26F8D89800C4749D /* PaymentType */,
+				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
+				1C8C641B26FA132100D72CB1 /* DocumentType */,
+				1C8C642526FA94FE00D72CB1 /* DocumentInfo */,
 			);
 			path = PaymentOrders;
 			sourceTree = "<group>";
@@ -538,6 +546,7 @@
 			isa = PBXGroup;
 			children = (
 				1CAC8A2A26F9132D00C4749D /* Dependencies */,
+				47947A8526FD739F00088D5C /* Models */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -571,9 +580,20 @@
 		472EB4D626DAF84200937B7E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				47947A8026FD739300088D5C /* BankAccount.swift */,
+				47947A7B26FD732400088D5C /* CreditCard.swift */,
+				47947A7626FD731D00088D5C /* Document.swift */,
+				47947A7126FD731500088D5C /* PaymentOrder.swift */,
+				1C88FF7726FC1BBD0084C71F /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		47947A8526FD739F00088D5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				472EB4D726DAF85300937B7E /* BaseViewController.swift */,
 				1C7E700626DB0CF2002E8E72 /* ClosureTypes.swift */,
-				1C88FF7726FC1BBD0084C71F /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -912,13 +932,14 @@
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
-				1C8C641D26FA143400D72CB1 /* DocumentsRegistrationViewController.swift in Sources */,
+				1C8C641D26FA143400D72CB1 /* DocumentTypeViewController.swift in Sources */,
+				47947A7226FD731500088D5C /* PaymentOrder.swift in Sources */,
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1CAC8A1E26F90FB000C4749D /* LoginModuleDependencies.swift in Sources */,
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,
 				1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
-				1C8C642926FA952C00D72CB1 /* UserInfoViewModel.swift in Sources */,
+				1C8C642926FA952C00D72CB1 /* DocumentInfoViewModel.swift in Sources */,
 				1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */,
 				47CE106426C99967002EAAE9 /* String+Extensions.swift in Sources */,
 				1C7E700926DB0E68002E8E72 /* ButtonViewStyle.swift in Sources */,
@@ -946,18 +967,21 @@
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
+				47947A8126FD739300088D5C /* BankAccount.swift in Sources */,
 				47CE106C26C9A2B5002EAAE9 /* ForgotPasswordViewController.swift in Sources */,
 				1CAC8A2C26F9133D00C4749D /* CoreModuleDependencies.swift in Sources */,
-				1C8C642B26FA953500D72CB1 /* UserInfoViewState.swift in Sources */,
+				1C8C642B26FA953500D72CB1 /* DocumentInfoViewState.swift in Sources */,
 				1C3CB68926F372470065D5A3 /* RegisterServiceProtocol.swift in Sources */,
 				1CCA4EE126C95550000A3214 /* OnboardingViewController.swift in Sources */,
 				1C88FF7826FC1BBD0084C71F /* User.swift in Sources */,
 				1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */,
 				1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */,
 				1CADF5C926EB01D70060A713 /* ForgotPasswordViewModel.swift in Sources */,
-				1C8C642726FA951600D72CB1 /* UserInfoViewController.swift in Sources */,
+				1C8C642726FA951600D72CB1 /* DocumentInfoViewController.swift in Sources */,
 				1C53598B26C860B800F5B148 /* UIFont+Extensions.swift in Sources */,
+				47947A7C26FD732400088D5C /* CreditCard.swift in Sources */,
 				1CADF5D026EB07A40060A713 /* ResetPasswordServiceProtocol.swift in Sources */,
+				47947A7726FD731D00088D5C /* Document.swift in Sources */,
 				1C53598926C85F9F00F5B148 /* UIColor+Extensions.swift in Sources */,
 				1CE207F926F79E61007436CF /* CreateOrderViewModel.swift in Sources */,
 				1C7E6FFA26DA89F0002E8E72 /* LoginService.swift in Sources */,
