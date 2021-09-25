@@ -4,35 +4,38 @@ class PaymentTypeViewController: BaseViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var chooseTypeLabelView: LabelView!
-    @IBOutlet weak var federalLabelView: LabelView!
-    @IBOutlet weak var stateLabelView: LabelView!
-    @IBOutlet weak var laborLabelView: LabelView!
+    @IBOutlet weak var federalTypeSelectionCardView: TypeSelectionCardView!
+    @IBOutlet weak var stateTypeSelectionCardView: TypeSelectionCardView!
+    @IBOutlet weak var laborTypeSelectionCardView: TypeSelectionCardView!
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setLabels()
-        setNavigationBarLayout()
+        setupLayout()
     }
 }
 
 // MARK: - Setup
 extension PaymentTypeViewController {
     
+    private func setupLayout() {
+        setLabels()
+        setNavigationBarLayout()
+        setActions()
+    }
     
     private func setLabels() {
-        let text = TextStyle(color: .darkGray, size: .p18, weight: .regular, aligment: .center)
         
         chooseTypeLabelView.set(text: "paymentType.choosetype".localized, textStyle: TextStyle(color: .darkGray, size: .p24, weight: .regular, aligment: .center))
-        federalLabelView.set(text: "paymentType.federal".localized, textStyle: text)
-        stateLabelView.set(text: "paymentType.state".localized, textStyle: text)
-        laborLabelView.set(text: "paymentType.labor".localized, textStyle: text)
+        
+        federalTypeSelectionCardView.set(title: "paymentType.federal".localized)
+        stateTypeSelectionCardView.set(title: "paymentType.state".localized)
+        laborTypeSelectionCardView.set(title: "paymentType.labor".localized)
     }
-}
-
-// MARK: - IBActions
-extension PaymentTypeViewController {
-    @IBAction func createOrderTouchUpInside(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToCreateOrder", sender: .none)
+    
+    private func setActions() {
+        federalTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToCreateOrder", sender: .none) }
+        stateTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToCreateOrder", sender: .none) }
+        laborTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToCreateOrder", sender: .none) }
     }
 }

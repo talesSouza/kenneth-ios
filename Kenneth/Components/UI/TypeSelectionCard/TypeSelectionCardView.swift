@@ -19,13 +19,12 @@ class TypeSelectionCardView: UIView, NibOwnerLoadable {
 // MARK: - Setup
 extension TypeSelectionCardView {
     
-    func set(title: String) {
+    func set(title: String, subtitle: String? = nil) {
         titleLabelView.set(text: title, textStyle: TextStyle(color: .darkGray, size: .p18))
-    }
-    
-    func set(subtitle: String) {
-        subtitleLabelView.set(text: subtitle, textStyle: TextStyle(color: .lightGray, size: .p14))
-        subtitleLabelView.isHidden = false
+        if let subtitle = subtitle {
+            subtitleLabelView.set(text: subtitle, textStyle: TextStyle(color: .lightGray, size: .p14))
+            subtitleLabelView.isHidden = false
+        }
     }
     
     func set(didTapAction: @escaping SimpleClosure) {

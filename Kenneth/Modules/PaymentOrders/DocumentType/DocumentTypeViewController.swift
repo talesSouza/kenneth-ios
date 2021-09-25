@@ -24,30 +24,24 @@ extension DocumentTypeViewController {
     private func setupLayout() {
         setNavigationBarLayout()
         setLabels()
+        setActions()
     }
     
     private func setLabels() {
         titleLabelView.set(text: "documentType.title".localized, textStyle: TextStyle(color: .darkGray, size: .p22))
         subtitleLabelView.set(text: "documentType.subtitle".localized, textStyle: TextStyle(color: .lightGray, size: .p16))
         
-        RGTypeSelectionCardView.set(title: "documentType.titleID".localized)
-        RGTypeSelectionCardView.set(subtitle: "documentType.subtitleID".localized)
-        RGTypeSelectionCardView.set {
-            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
-        }
+        RGTypeSelectionCardView.set(title: "documentType.titleID".localized, subtitle: "documentType.subtitleID".localized)
+        CNHTypeSelectionCardView.set(title: "documentType.titleDriver".localized, subtitle: "documentType.subtitleDriver".localized)
+        OABTypeSelectionCardView.set(title: "documentType.titleLawyer".localized, subtitle: "documentType.subtitleLawyer".localized)
         
-        CNHTypeSelectionCardView.set(title: "documentType.titleDriver".localized)
-        CNHTypeSelectionCardView.set(subtitle: "documentType.subtitleDriver".localized)
-        CNHTypeSelectionCardView.set {
-            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
-        }
-        
-        OABTypeSelectionCardView.set(title: "documentType.titleLawyer".localized)
-        OABTypeSelectionCardView.set(subtitle: "documentType.subtitleLawyer".localized)
-        OABTypeSelectionCardView.set {
-            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
-        }
-}
+    }
+    
+    private func setActions() {
+        RGTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
+        CNHTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
+        OABTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
+    }
 }
 
 

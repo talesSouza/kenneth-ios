@@ -795,51 +795,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="oCe-mM-qWl">
                                 <rect key="frame" x="40" y="324" width="334" height="332"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPW-qf-NHE">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPW-qf-NHE" customClass="TypeSelectionCardView" customModule="Kenneth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KIG-t1-Mly" userLabel="Leading border view">
-                                                <rect key="frame" x="0.0" y="0.0" width="4" height="100"/>
-                                                <color key="backgroundColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="4" id="P1r-9S-GuO"/>
-                                                </constraints>
-                                            </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="ZpM-j5-61s">
-                                                <rect key="frame" x="304" y="28.5" width="22" height="43"/>
-                                                <color key="tintColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="22" id="USD-qa-rcV"/>
-                                                    <constraint firstAttribute="height" constant="43" id="yac-WG-KBr"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6R-nG-ehz" customClass="LabelView" customModule="Kenneth" customModuleProvider="target">
-                                                <rect key="frame" x="47" y="21" width="240" height="58"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-XG-FcB">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
-                                                <connections>
-                                                    <action selector="createOrderTouchUpInside:" destination="u0K-ty-BnD" eventType="touchUpInside" id="vyy-Ua-Jg3"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="ZpM-j5-61s" firstAttribute="leading" secondItem="Y6R-nG-ehz" secondAttribute="trailing" constant="17" id="1Pl-Cl-Xbl"/>
-                                            <constraint firstItem="Y6R-nG-ehz" firstAttribute="top" secondItem="FPW-qf-NHE" secondAttribute="top" constant="21" id="B1f-Fd-yUi"/>
-                                            <constraint firstItem="g0R-XG-FcB" firstAttribute="leading" secondItem="FPW-qf-NHE" secondAttribute="leading" id="FOK-lK-1CX"/>
-                                            <constraint firstItem="Y6R-nG-ehz" firstAttribute="centerY" secondItem="FPW-qf-NHE" secondAttribute="centerY" id="Hbz-ur-hgM"/>
-                                            <constraint firstItem="KIG-t1-Mly" firstAttribute="top" secondItem="FPW-qf-NHE" secondAttribute="top" id="PVU-L8-D9c"/>
-                                            <constraint firstItem="Y6R-nG-ehz" firstAttribute="centerX" secondItem="FPW-qf-NHE" secondAttribute="centerX" id="WEo-ZK-2aL"/>
-                                            <constraint firstItem="ZpM-j5-61s" firstAttribute="centerY" secondItem="FPW-qf-NHE" secondAttribute="centerY" id="XXb-33-pv3"/>
-                                            <constraint firstAttribute="trailing" secondItem="ZpM-j5-61s" secondAttribute="trailing" constant="8" id="cjX-G1-FUY"/>
                                             <constraint firstAttribute="height" constant="100" id="fWB-Ti-vle"/>
-                                            <constraint firstAttribute="bottom" secondItem="KIG-t1-Mly" secondAttribute="bottom" id="mH7-Ft-MPj"/>
-                                            <constraint firstItem="KIG-t1-Mly" firstAttribute="leading" secondItem="FPW-qf-NHE" secondAttribute="leading" id="qtN-Ef-pEk"/>
-                                            <constraint firstAttribute="trailing" secondItem="g0R-XG-FcB" secondAttribute="trailing" id="tL6-aw-2MR"/>
-                                            <constraint firstItem="g0R-XG-FcB" firstAttribute="top" secondItem="FPW-qf-NHE" secondAttribute="top" id="uEI-MB-XXd"/>
-                                            <constraint firstAttribute="bottom" secondItem="g0R-XG-FcB" secondAttribute="bottom" id="vFT-S2-afO"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -850,51 +810,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-Dk-GdT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aJc-Dk-GdT" customClass="TypeSelectionCardView" customModule="Kenneth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="116" width="334" height="100"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwk-6t-wZ6" userLabel="Leading border view">
-                                                <rect key="frame" x="0.0" y="0.0" width="4" height="100"/>
-                                                <color key="backgroundColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="4" id="XUD-Ff-FkZ"/>
-                                                </constraints>
-                                            </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-N6-FuN">
-                                                <rect key="frame" x="304" y="28.5" width="22" height="43"/>
-                                                <color key="tintColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="NGI-Gu-qhr"/>
-                                                    <constraint firstAttribute="width" constant="22" id="fkU-VI-6zV"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0g-CP-LhZ" customClass="LabelView" customModule="Kenneth" customModuleProvider="target">
-                                                <rect key="frame" x="47" y="21" width="240" height="58"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DW-cL-bFs">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
-                                                <connections>
-                                                    <action selector="createOrderTouchUpInside:" destination="u0K-ty-BnD" eventType="touchUpInside" id="3Io-JC-kUu"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="x6r-N6-FuN" secondAttribute="trailing" constant="8" id="13D-Pd-Hja"/>
                                             <constraint firstAttribute="height" constant="100" id="4fi-KF-3I0"/>
-                                            <constraint firstItem="2DW-cL-bFs" firstAttribute="top" secondItem="aJc-Dk-GdT" secondAttribute="top" id="Agb-PD-R8g"/>
-                                            <constraint firstItem="R0g-CP-LhZ" firstAttribute="top" secondItem="aJc-Dk-GdT" secondAttribute="top" constant="21" id="IFO-yT-cBq"/>
-                                            <constraint firstAttribute="bottom" secondItem="2DW-cL-bFs" secondAttribute="bottom" id="KBy-Hi-rEa"/>
-                                            <constraint firstItem="x6r-N6-FuN" firstAttribute="centerY" secondItem="aJc-Dk-GdT" secondAttribute="centerY" id="Peq-Xq-liR"/>
-                                            <constraint firstAttribute="trailing" secondItem="2DW-cL-bFs" secondAttribute="trailing" id="X7t-8t-VkD"/>
-                                            <constraint firstAttribute="bottom" secondItem="Xwk-6t-wZ6" secondAttribute="bottom" id="g0J-PY-Lw6"/>
-                                            <constraint firstItem="x6r-N6-FuN" firstAttribute="leading" secondItem="R0g-CP-LhZ" secondAttribute="trailing" constant="17" id="pDo-Hc-sCJ"/>
-                                            <constraint firstItem="R0g-CP-LhZ" firstAttribute="centerX" secondItem="aJc-Dk-GdT" secondAttribute="centerX" id="qAz-Fh-7sh"/>
-                                            <constraint firstItem="2DW-cL-bFs" firstAttribute="leading" secondItem="aJc-Dk-GdT" secondAttribute="leading" id="qI1-az-2Da"/>
-                                            <constraint firstItem="Xwk-6t-wZ6" firstAttribute="top" secondItem="aJc-Dk-GdT" secondAttribute="top" id="wFl-E7-zxY"/>
-                                            <constraint firstItem="Xwk-6t-wZ6" firstAttribute="leading" secondItem="aJc-Dk-GdT" secondAttribute="leading" id="xpm-kw-sEd"/>
-                                            <constraint firstItem="R0g-CP-LhZ" firstAttribute="centerY" secondItem="aJc-Dk-GdT" secondAttribute="centerY" id="ye3-Xh-Emb"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -905,51 +825,11 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0Q-j6-wsQ">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0Q-j6-wsQ" customClass="TypeSelectionCardView" customModule="Kenneth" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="232" width="334" height="100"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RK-Lo-5FN" userLabel="Leading border view">
-                                                <rect key="frame" x="0.0" y="0.0" width="4" height="100"/>
-                                                <color key="backgroundColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="4" id="mnb-dL-3E4"/>
-                                                </constraints>
-                                            </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="LQJ-01-p2M">
-                                                <rect key="frame" x="304" y="28.5" width="22" height="43"/>
-                                                <color key="tintColor" name="Gold"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="D5C-8E-vYT"/>
-                                                    <constraint firstAttribute="width" constant="22" id="eCA-Wb-ezp"/>
-                                                </constraints>
-                                            </imageView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="93M-Xc-QS1" customClass="LabelView" customModule="Kenneth" customModuleProvider="target">
-                                                <rect key="frame" x="47" y="21" width="240" height="58"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1Q-BO-gDl">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="100"/>
-                                                <connections>
-                                                    <action selector="createOrderTouchUpInside:" destination="u0K-ty-BnD" eventType="touchUpInside" id="qdy-0V-xqS"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="J1Q-BO-gDl" secondAttribute="trailing" id="4tb-4L-7Dc"/>
-                                            <constraint firstItem="93M-Xc-QS1" firstAttribute="centerY" secondItem="m0Q-j6-wsQ" secondAttribute="centerY" id="BPs-1L-jT1"/>
-                                            <constraint firstAttribute="bottom" secondItem="J1Q-BO-gDl" secondAttribute="bottom" id="COV-o2-5SX"/>
-                                            <constraint firstItem="93M-Xc-QS1" firstAttribute="centerX" secondItem="m0Q-j6-wsQ" secondAttribute="centerX" id="EM9-fA-c9l"/>
-                                            <constraint firstItem="J1Q-BO-gDl" firstAttribute="top" secondItem="m0Q-j6-wsQ" secondAttribute="top" id="I7z-z8-PE6"/>
-                                            <constraint firstItem="93M-Xc-QS1" firstAttribute="top" secondItem="m0Q-j6-wsQ" secondAttribute="top" constant="21" id="JUV-JO-lzG"/>
-                                            <constraint firstItem="LQJ-01-p2M" firstAttribute="leading" secondItem="93M-Xc-QS1" secondAttribute="trailing" constant="17" id="RY3-Cb-oM6"/>
-                                            <constraint firstItem="5RK-Lo-5FN" firstAttribute="leading" secondItem="m0Q-j6-wsQ" secondAttribute="leading" id="VV3-2L-7vi"/>
                                             <constraint firstAttribute="height" constant="100" id="bvD-Mn-SG3"/>
-                                            <constraint firstItem="LQJ-01-p2M" firstAttribute="centerY" secondItem="m0Q-j6-wsQ" secondAttribute="centerY" id="f4C-y8-rGq"/>
-                                            <constraint firstAttribute="bottom" secondItem="5RK-Lo-5FN" secondAttribute="bottom" id="gTf-2b-Nbz"/>
-                                            <constraint firstAttribute="trailing" secondItem="LQJ-01-p2M" secondAttribute="trailing" constant="8" id="qcL-ec-8lb"/>
-                                            <constraint firstItem="5RK-Lo-5FN" firstAttribute="top" secondItem="m0Q-j6-wsQ" secondAttribute="top" id="xrm-VH-WxV"/>
-                                            <constraint firstItem="J1Q-BO-gDl" firstAttribute="leading" secondItem="m0Q-j6-wsQ" secondAttribute="leading" id="ztH-zn-usG"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -994,9 +874,9 @@
                     <navigationItem key="navigationItem" title="Ordem de Pagamento" id="hjR-T1-Nx7"/>
                     <connections>
                         <outlet property="chooseTypeLabelView" destination="Z0w-ep-ADC" id="PIf-73-EgJ"/>
-                        <outlet property="federalLabelView" destination="Y6R-nG-ehz" id="zSh-oR-gN9"/>
-                        <outlet property="laborLabelView" destination="93M-Xc-QS1" id="BqD-Vx-8P6"/>
-                        <outlet property="stateLabelView" destination="R0g-CP-LhZ" id="0y8-eC-5By"/>
+                        <outlet property="federalTypeSelectionCardView" destination="FPW-qf-NHE" id="Iq2-mN-Ftd"/>
+                        <outlet property="laborTypeSelectionCardView" destination="m0Q-j6-wsQ" id="vWb-ru-Vfb"/>
+                        <outlet property="stateTypeSelectionCardView" destination="aJc-Dk-GdT" id="B5K-vg-whG"/>
                         <segue destination="VoV-9K-2Vr" kind="show" identifier="goToCreateOrder" id="dEv-Sc-dBY"/>
                     </connections>
                 </viewController>
@@ -14771,7 +14651,6 @@ lQAMD5sADA+jAAwPpQAMD6cADA+pAAwPqwAMIUsADCFQAAwhXQAMIWAADCFtAAwhcgAMIXoADCF9AAwh
 ggAMIYoAAAAAAAAEAQAAAAAAAABWAAAAAAAAAAAAAAAAAAwhjQ
 </mutableData>
         </image>
-        <image name="next" width="42.666667938232422" height="42.666667938232422"/>
         <image name="splash-bg" width="750" height="1334"/>
         <namedColor name="Gold">
             <color red="0.68627450980392157" green="0.63921568627450975" blue="0.46274509803921571" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
