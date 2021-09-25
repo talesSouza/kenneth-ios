@@ -21,6 +21,9 @@
 		1C63B3F026C86AE500A77284 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */; };
 		1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F226C88EE600A77284 /* LoginViewController.swift */; };
 		1C63B3F526C88FAE00A77284 /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */; };
+		1C67C76326FF5F01009BAC67 /* TypeSelectionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C76226FF5F01009BAC67 /* TypeSelectionCardView.swift */; };
+		1C67C76526FF5F0F009BAC67 /* TypeSelectionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C67C76426FF5F0F009BAC67 /* TypeSelectionCardView.xib */; };
+		1C67C76726FF8050009BAC67 /* DocumentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C67C76626FF8050009BAC67 /* DocumentTypeViewController.swift */; };
 		1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */; };
 		1C6CA7F626F2B652008C71E2 /* RegisterViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */; };
 		1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */; };
@@ -40,7 +43,6 @@
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
 		1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329426DBD2C700724324 /* SliderViewModel.swift */; };
 		1C8A329726DBD37800724324 /* SliderViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329626DBD37800724324 /* SliderViewState.swift */; };
-		1C8C641D26FA143400D72CB1 /* DocumentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */; };
 		1C8C642726FA951600D72CB1 /* DocumentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */; };
 		1C8C642926FA952C00D72CB1 /* DocumentInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */; };
 		1C8C642B26FA953500D72CB1 /* DocumentInfoViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */; };
@@ -119,6 +121,9 @@
 		1C63B3EF26C86AE500A77284 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Extensions.swift"; path = "UIKit/UIView+Extensions.swift"; sourceTree = SOURCE_ROOT; };
 		1C63B3F226C88EE600A77284 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1C63B3F426C88FAE00A77284 /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+Extensions.swift"; path = "UIKit/UILabel+Extensions.swift"; sourceTree = SOURCE_ROOT; };
+		1C67C76226FF5F01009BAC67 /* TypeSelectionCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeSelectionCardView.swift; sourceTree = "<group>"; };
+		1C67C76426FF5F0F009BAC67 /* TypeSelectionCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TypeSelectionCardView.xib; sourceTree = "<group>"; };
+		1C67C76626FF8050009BAC67 /* DocumentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTypeViewController.swift; sourceTree = "<group>"; };
 		1C6CA7F326F2B643008C71E2 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		1C6CA7F526F2B652008C71E2 /* RegisterViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewState.swift; sourceTree = "<group>"; };
 		1C7E6FF326DA844B002E8E72 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -138,7 +143,6 @@
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
 		1C8A329426DBD2C700724324 /* SliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewModel.swift; sourceTree = "<group>"; };
 		1C8A329626DBD37800724324 /* SliderViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewState.swift; sourceTree = "<group>"; };
-		1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTypeViewController.swift; sourceTree = "<group>"; };
 		1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewController.swift; sourceTree = "<group>"; };
 		1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewModel.swift; sourceTree = "<group>"; };
 		1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewState.swift; sourceTree = "<group>"; };
@@ -317,6 +321,15 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		1C67C76126FF5ED1009BAC67 /* TypeSelectionCard */ = {
+			isa = PBXGroup;
+			children = (
+				1C67C76226FF5F01009BAC67 /* TypeSelectionCardView.swift */,
+				1C67C76426FF5F0F009BAC67 /* TypeSelectionCardView.xib */,
+			);
+			path = TypeSelectionCard;
+			sourceTree = "<group>";
+		};
 		1C7E6FF226DA840A002E8E72 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,7 +443,7 @@
 		1C8C641B26FA132100D72CB1 /* DocumentType */ = {
 			isa = PBXGroup;
 			children = (
-				1C8C641C26FA143400D72CB1 /* DocumentTypeViewController.swift */,
+				1C67C76626FF8050009BAC67 /* DocumentTypeViewController.swift */,
 			);
 			path = DocumentType;
 			sourceTree = "<group>";
@@ -477,6 +490,7 @@
 		1CAC8A0F26F8FB2F00C4749D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1C67C76126FF5ED1009BAC67 /* TypeSelectionCard */,
 				1CAC8A1026F8FB3700C4749D /* OrderInfo */,
 			);
 			path = UI;
@@ -799,6 +813,7 @@
 				47ED84B726C84CEF003817AD /* SF-Pro-Display-Semibold.otf in Resources */,
 				47ED84B626C84CEF003817AD /* SF-Pro-Display-Bold.otf in Resources */,
 				1C8A328E26DBB75400724324 /* Localizable.strings in Resources */,
+				1C67C76526FF5F0F009BAC67 /* TypeSelectionCardView.xib in Resources */,
 				47ED84B826C84CEF003817AD /* SF-Pro-Display-Light.otf in Resources */,
 				47ED84B926C84CEF003817AD /* SF-Pro-Display-Regular.otf in Resources */,
 				1C7E701226DB3602002E8E72 /* ButtonView.xib in Resources */,
@@ -932,7 +947,6 @@
 			files = (
 				1C63B3F326C88EE600A77284 /* LoginViewController.swift in Sources */,
 				1CADF5CE26EB07990060A713 /* ResetPasswordService.swift in Sources */,
-				1C8C641D26FA143400D72CB1 /* DocumentTypeViewController.swift in Sources */,
 				47947A7226FD731500088D5C /* PaymentOrder.swift in Sources */,
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1CAC8A1E26F90FB000C4749D /* LoginModuleDependencies.swift in Sources */,
@@ -963,8 +977,10 @@
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,
 				1C7E700D26DB0F19002E8E72 /* TextStyle.swift in Sources */,
+				1C67C76726FF8050009BAC67 /* DocumentTypeViewController.swift in Sources */,
 				1C7E6FFD26DA8D0F002E8E72 /* LoginServiceProtocol.swift in Sources */,
 				1CCA4EDF26C9553A000A3214 /* RegisterViewController.swift in Sources */,
+				1C67C76326FF5F01009BAC67 /* TypeSelectionCardView.swift in Sources */,
 				1C7E6FF426DA844B002E8E72 /* LoginViewModel.swift in Sources */,
 				1CADF5C526EAFF160060A713 /* LabelView.swift in Sources */,
 				47947A8126FD739300088D5C /* BankAccount.swift in Sources */,

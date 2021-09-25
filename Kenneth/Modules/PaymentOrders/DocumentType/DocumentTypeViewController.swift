@@ -6,13 +6,9 @@ class DocumentTypeViewController: BaseViewController {
     @IBOutlet weak var titleLabelView: LabelView!
     @IBOutlet weak var subtitleLabelView: LabelView!
     
-    // TODO: arrumar nomes
-    @IBOutlet weak var topTitleLabelView: LabelView!
-    @IBOutlet weak var topSubtitleLabelView: LabelView!
-    @IBOutlet weak var centerTitleLabelView: LabelView!
-    @IBOutlet weak var centerSubtitleLabelView: LabelView!
-    @IBOutlet weak var bottomTitleLabelView: LabelView!
-    @IBOutlet weak var bottomSubtitleLabelView: LabelView!
+    @IBOutlet weak var RGTypeSelectionCardView: TypeSelectionCardView!
+    @IBOutlet weak var CNHTypeSelectionCardView: TypeSelectionCardView!
+    @IBOutlet weak var OABTypeSelectionCardView: TypeSelectionCardView!
 }
 
 // MARK: - Life Cycle
@@ -31,27 +27,27 @@ extension DocumentTypeViewController {
     }
     
     private func setLabels() {
-        let titleTextStyle = TextStyle(color: .darkGray, size: .p18)
-        let subtitleTextStyle = TextStyle(color: .lightGray, size: .p12)
+        titleLabelView.set(text: "documentType.title".localized, textStyle: TextStyle(color: .darkGray, size: .p22))
+        subtitleLabelView.set(text: "documentType.subtitle".localized, textStyle: TextStyle(color: .lightGray, size: .p16))
         
-        // TODO: atualizar nome modulo localized
-        titleLabelView.set(text: "documentsRegistration.title".localized, textStyle: TextStyle(color: .darkGray, size: .p22))
-        subtitleLabelView.set(text: "documentsRegistration.subtitle".localized, textStyle: TextStyle(color: .lightGray, size: .p16))
+        RGTypeSelectionCardView.set(title: "documentType.titleID".localized)
+        RGTypeSelectionCardView.set(subtitle: "documentType.subtitleID".localized)
+        RGTypeSelectionCardView.set {
+            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
+        }
         
-        topTitleLabelView.set(text: "documentsRegistration.titleID".localized, textStyle: titleTextStyle)
-        topSubtitleLabelView.set(text: "documentsRegistration.subtitleID".localized, textStyle: subtitleTextStyle)
+        CNHTypeSelectionCardView.set(title: "documentType.titleDriver".localized)
+        CNHTypeSelectionCardView.set(subtitle: "documentType.subtitleDriver".localized)
+        CNHTypeSelectionCardView.set {
+            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
+        }
         
-        centerTitleLabelView.set(text: "documentsRegistration.titleDriver".localized, textStyle: titleTextStyle)
-        centerSubtitleLabelView.set(text: "documentsRegistration.subtitleDriver".localized, textStyle: subtitleTextStyle)
-        
-        bottomTitleLabelView.set(text: "documentsRegistration.titleLawyer".localized, textStyle: titleTextStyle)
-        bottomSubtitleLabelView.set(text: "documentsRegistration.subtitleLawyer".localized, textStyle: subtitleTextStyle)
-    }
+        OABTypeSelectionCardView.set(title: "documentType.titleLawyer".localized)
+        OABTypeSelectionCardView.set(subtitle: "documentType.subtitleLawyer".localized)
+        OABTypeSelectionCardView.set {
+            self.performSegue(withIdentifier: "goToDocumentInfo", sender: self)
+        }
+}
 }
 
-// MARK: - IBActions
-extension DocumentTypeViewController {
-    @IBAction func documentType(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToInfosFilling", sender: self)
-    }
-}
+

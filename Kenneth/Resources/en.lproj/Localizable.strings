@@ -40,23 +40,23 @@
 "createOrder.creditcard" = "Cartão de Crédito";
 "createOrder.next" = "PRÓXIMO";
 
-// MARK: - Documents Registration
-"documentsRegistration.title" = "Escolha o tipo \n de documento para cadastrar";
-"documentsRegistration.subtitle" = "Apenas Documentos Originais e dentro da validade serão aceitos";
-"documentsRegistration.titleID" = "RG";
-"documentsRegistration.subtitleID" = "Documento de identidade";
-"documentsRegistration.titleDriver" = "CNH";
-"documentsRegistration.subtitleDriver" = "Carteira de motorista";
-"documentsRegistration.titleLawyer" = "OAB";
-"documentsRegistration.subtitleLawyer" = "Carteira da Ordem de Advogados do Brasil";
+// MARK: - Document Type
+"documentType.title" = "Escolha o tipo \n de documento para cadastrar";
+"documentType.subtitle" = "Apenas Documentos Originais e dentro da validade serão aceitos";
+"documentType.titleID" = "RG";
+"documentType.subtitleID" = "Documento de identidade";
+"documentType.titleDriver" = "CNH";
+"documentType.subtitleDriver" = "Carteira de motorista";
+"documentType.titleLawyer" = "OAB";
+"documentType.subtitleLawyer" = "Carteira da Ordem de Advogados do Brasil";
 
-// MARK: - Info Filling
-"infoFilling.title" = "Digite os dados do seu \n documento de identidade";
-"infoFilling.validate" = "Validade";
-"infoFilling.loadDocuments" = "CARREGAR DOCUMENTOS";
-"infoFilling.selectPhoto" = "Selecionar foto";
-"infoFilling.wichPhoto" = "Escolha o local da foto";
-"infoFilling.camera" = "Câmera";
-"infoFilling.photoLibrary" = "Biblioteca";
-"infoFilling.photoAlbum" = "Album de fotos";
-"infoFilling.cancel" = "Cancelar";
+// MARK: - Document Info
+"documentInfo.title" = "Digite os dados do seu \n documento de identidade";
+"documentInfo.validate" = "Validade";
+"documentInfo.loadDocuments" = "CARREGAR DOCUMENTOS";
+"documentInfo.selectPhoto" = "Selecionar foto";
+"documentInfo.wichPhoto" = "Escolha o local da foto";
+"documentInfo.camera" = "Câmera";
+"documentInfo.photoLibrary" = "Biblioteca";
+"documentInfo.photoAlbum" = "Album de fotos";
+"documentInfo.cancel" = "Cancelar";

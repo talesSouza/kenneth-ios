@@ -62,13 +62,13 @@ extension DocumentInfoViewController {
     }
     
     func setLabels() {
-        titleLabelView.set(text: "infoFilling.title".localized, textStyle: TextStyle(color: .darkGray, size: .p20))
-        validateLabelView.set(text: "infoFilling.validate".localized, textStyle: TextStyle(color: .systemGray2, size: .p16))
+        titleLabelView.set(text: "documentInfo.title".localized, textStyle: TextStyle(color: .darkGray, size: .p20))
+        validateLabelView.set(text: "documentInfo.validate".localized, textStyle: TextStyle(color: .systemGray2, size: .p16))
         validateLabelView.backgroundColor = .grayLight
     }
     
     func setButtons() {
-        loadDocumentsButtonView.set(title: "infoFilling.loadDocuments".localized, style: .primary)
+        loadDocumentsButtonView.set(title: "documentInfo.loadDocuments".localized, style: .primary)
         loadDocumentsButtonView.set { [weak self] in
             guard let self = self else { return }
             self.viewModel.createDocument()
@@ -103,8 +103,8 @@ extension DocumentInfoViewController {
     
     private func openPhotoOptions() {
         
-        let alert = UIAlertController(title: "infoFilling.selectPhoto".localized,
-                                      message: "infoFilling.wichPhoto".localized,
+        let alert = UIAlertController(title: "documentInfo.selectPhoto".localized,
+                                      message: "documentInfo.wichPhoto".localized,
                                       preferredStyle: .actionSheet)
         
         // Camera Action
@@ -113,7 +113,7 @@ extension DocumentInfoViewController {
         }
         
         // Photos Library Action
-        let libraryAction = UIAlertAction(title: "infoFilling.photoLibrary".localized,
+        let libraryAction = UIAlertAction(title: "documentInfo.photoLibrary".localized,
                                           style: .default,
                                           handler: { (action) in
                                             self.selectPicture(sourceType: .photoLibrary)
@@ -121,7 +121,7 @@ extension DocumentInfoViewController {
         alert.addAction(libraryAction)
         
         // Cancel Action
-        let cancelAction = UIAlertAction(title: "infoFilling.cancel".localized,
+        let cancelAction = UIAlertAction(title: "documentInfo.cancel".localized,
                                          style: .default,
                                          handler: nil)
         alert.addAction(cancelAction)
@@ -131,7 +131,7 @@ extension DocumentInfoViewController {
     
     private func createCameraAction() -> UIAlertAction? {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-            return UIAlertAction(title: "infoFilling.camera".localized,
+            return UIAlertAction(title: "documentInfo.camera".localized,
                                  style: .default,
                                  handler: { (action) in
                                     self.selectPicture(sourceType: .camera)
