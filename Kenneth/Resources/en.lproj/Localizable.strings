@@ -43,12 +43,12 @@
 // MARK: - Document Type
 "documentType.title" = "Escolha o tipo \n de documento para cadastrar";
 "documentType.subtitle" = "Apenas Documentos Originais e dentro da validade serão aceitos";
-"documentType.titleID" = "RG";
-"documentType.subtitleID" = "Documento de identidade";
-"documentType.titleDriver" = "CNH";
-"documentType.subtitleDriver" = "Carteira de motorista";
-"documentType.titleLawyer" = "OAB";
-"documentType.subtitleLawyer" = "Carteira da Ordem de Advogados do Brasil";
+//"documentType.rg" = "RG";
+"documentType.rg" = "Documento de identidade";
+//"documentType.titleDriver" = "CNH";
+"documentType.cnh" = "Carteira de motorista";
+//"documentType.titleLawyer" = "OAB";
+"documentType.oab" = "Carteira da Ordem de Advogados do Brasil";
 
 // MARK: - Document Info
 "documentInfo.title" = "Digite os dados do seu \n documento de identidade";
@@ -60,3 +60,7 @@
 "documentInfo.photoLibrary" = "Biblioteca";
 "documentInfo.photoAlbum" = "Album de fotos";
 "documentInfo.cancel" = "Cancelar";
+
+// MARK: - Bank Register
+"bankRegister.bank" = "Banco";
+"bankRegister.register" = "CADASTRAR";

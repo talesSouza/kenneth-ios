@@ -45,7 +45,7 @@ extension CreateOrderViewController {
         bankAccountOrderInfoView.set(title: "createOrder.bankaccount".localized)
         bankAccountOrderInfoView.set { [weak self] in
             guard let self = self else { return }
-            self.performSegue(withIdentifier: "", sender: self)
+            self.performSegue(withIdentifier: "goToBankRegister", sender: self)
         }
         
         creditCardOrderInfoView.set(title: "createOrder.creditcard".localized)

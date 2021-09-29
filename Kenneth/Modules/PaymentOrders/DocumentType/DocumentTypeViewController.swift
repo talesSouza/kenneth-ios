@@ -31,17 +31,16 @@ extension DocumentTypeViewController {
         titleLabelView.set(text: "documentType.title".localized, textStyle: TextStyle(color: .darkGray, size: .p22))
         subtitleLabelView.set(text: "documentType.subtitle".localized, textStyle: TextStyle(color: .lightGray, size: .p16))
         
-        RGTypeSelectionCardView.set(title: "documentType.titleID".localized, subtitle: "documentType.subtitleID".localized)
-        CNHTypeSelectionCardView.set(title: "documentType.titleDriver".localized, subtitle: "documentType.subtitleDriver".localized)
-        OABTypeSelectionCardView.set(title: "documentType.titleLawyer".localized, subtitle: "documentType.subtitleLawyer".localized)
+        RGTypeSelectionCardView.set(title: DocumentType.rg.rawValue, subtitle: DocumentType.rg.description)
+        CNHTypeSelectionCardView.set(title: DocumentType.cnh.rawValue, subtitle: DocumentType.cnh.description)
+        OABTypeSelectionCardView.set(title: DocumentType.oab.rawValue, subtitle: DocumentType.oab.description)
         
     }
     
     private func setActions() {
-        RGTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
-        CNHTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
-        OABTypeSelectionCardView.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) }
+        let typeSelectionCardViews: [TypeSelectionCardView] = [RGTypeSelectionCardView, CNHTypeSelectionCardView, OABTypeSelectionCardView]
+        typeSelectionCardViews.forEach { $0.set { self.performSegue(withIdentifier: "goToDocumentInfo", sender: self) 
+        }
+        }
     }
 }
-
-

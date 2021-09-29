@@ -3,18 +3,17 @@ import UIKit
 enum DocumentType: String {
     
     case rg = "RG"
-    case cpf = "CPF"
+    case cnh = "CPF"
     case oab = "OAB"
     
-    // TODO: arrumar
     var description: String {
         switch self {
         case .rg:
             return "documentType.rg".localized
-        case .cpf:
-            return "rg".localized
+        case .cnh:
+            return "documentType.cnh".localized
         case .oab:
-            return "rg".localized
+            return "documentType.oab".localized
         }
     }
 }
