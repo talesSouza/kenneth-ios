@@ -10,8 +10,10 @@ class DocumentInfoViewController: BaseViewController {
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var documentTextField: UITextField!
-    @IBOutlet weak var validateLabelView: LabelView!
+    @IBOutlet weak var validateTextField: UITextField!
     @IBOutlet weak var loadDocumentsButtonView: ButtonView!
+    
+    let datePicker = UIDatePicker()
 }
 
 // MARK: - Life Cycle
@@ -20,6 +22,7 @@ extension DocumentInfoViewController {
         super.viewDidLoad()
         setObserver()
         setNavigationBarLayout()
+        createDatePicker()
     }
 }
 
@@ -63,8 +66,6 @@ extension DocumentInfoViewController {
     
     func setLabels() {
         titleLabelView.set(text: "documentInfo.title".localized, textStyle: TextStyle(color: .darkGray, size: .p20))
-        validateLabelView.set(text: "documentInfo.validate".localized, textStyle: TextStyle(color: .systemGray2, size: .p16))
-        validateLabelView.backgroundColor = .grayLight
     }
     
     func setButtons() {
@@ -76,9 +77,26 @@ extension DocumentInfoViewController {
     }
 }
 
-// MARK: - IBActions
 extension DocumentInfoViewController {
     
+    private func createDatePicker() {
+        validateTextField.inputView = datePicker
+        datePicker.datePickerMode = .date
+        //ajustar pra abrir direto o calendario
+        
+        //aqui mudar o texto qdo apertado done (ver pod usado)
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateStyle = .medium
+//        dateFormatter.timeStyle = .none
+//        validateTextField.text = dateFormatter.string(from: datePicker.date)
+        
+    }
+    
+    
+}
+
+// MARK: - IBActions
+extension DocumentInfoViewController {
     @IBAction func loadPhotoTouchUpInside(_ sender: UIButton) {
         openPhotoOptions()
     }

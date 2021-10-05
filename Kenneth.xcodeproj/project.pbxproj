@@ -38,6 +38,7 @@
 		1C7E700F26DB1156002E8E72 /* TextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E700E26DB1156002E8E72 /* TextBuilder.swift */; };
 		1C7E701226DB3602002E8E72 /* ButtonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C7E701126DB3602002E8E72 /* ButtonView.xib */; };
 		1C7E701426DB3DE5002E8E72 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7E701326DB3DE5002E8E72 /* UIViewController+Extensions.swift */; };
+		1C82F04727068AD4002C7F56 /* BankOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C82F04627068AD4002C7F56 /* BankOptionsViewController.swift */; };
 		1C88FF7826FC1BBD0084C71F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C88FF7726FC1BBD0084C71F /* User.swift */; };
 		1C8A328E26DBB75400724324 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1C8A329026DBB75400724324 /* Localizable.strings */; };
 		1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */; };
@@ -46,6 +47,7 @@
 		1C8C642726FA951600D72CB1 /* DocumentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */; };
 		1C8C642926FA952C00D72CB1 /* DocumentInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */; };
 		1C8C642B26FA953500D72CB1 /* DocumentInfoViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */; };
+		1C99E3602708C852002C96BD /* BankOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C99E35F2708C852002C96BD /* BankOptionsTableViewCell.swift */; };
 		1CAC8A0B26F8D81B00C4749D /* PaymentTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */; };
 		1CAC8A1226F8FBD100C4749D /* OrderInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */; };
 		1CAC8A1426F8FBD800C4749D /* OrderInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */; };
@@ -141,6 +143,7 @@
 		1C7E700E26DB1156002E8E72 /* TextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBuilder.swift; sourceTree = "<group>"; };
 		1C7E701126DB3602002E8E72 /* ButtonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonView.xib; sourceTree = "<group>"; };
 		1C7E701326DB3DE5002E8E72 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		1C82F04627068AD4002C7F56 /* BankOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOptionsViewController.swift; sourceTree = "<group>"; };
 		1C88FF7726FC1BBD0084C71F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1C8A328F26DBB75400724324 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		1C8A329226DBC48400724324 /* KeyValueStorageKey+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyValueStorageKey+Extensions.swift"; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 		1C8C642626FA951600D72CB1 /* DocumentInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewController.swift; sourceTree = "<group>"; };
 		1C8C642826FA952C00D72CB1 /* DocumentInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewModel.swift; sourceTree = "<group>"; };
 		1C8C642A26FA953500D72CB1 /* DocumentInfoViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentInfoViewState.swift; sourceTree = "<group>"; };
+		1C99E35F2708C852002C96BD /* BankOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOptionsTableViewCell.swift; sourceTree = "<group>"; };
 		1CAC8A0A26F8D81B00C4749D /* PaymentTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTypeViewController.swift; sourceTree = "<group>"; };
 		1CAC8A1126F8FBD000C4749D /* OrderInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInfoView.swift; sourceTree = "<group>"; };
 		1CAC8A1326F8FBD800C4749D /* OrderInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderInfoView.xib; sourceTree = "<group>"; };
@@ -438,6 +442,15 @@
 			path = Text;
 			sourceTree = "<group>";
 		};
+		1C82F04527068AC2002C7F56 /* BankOptions */ = {
+			isa = PBXGroup;
+			children = (
+				1C82F04627068AD4002C7F56 /* BankOptionsViewController.swift */,
+				1C99E35F2708C852002C96BD /* BankOptionsTableViewCell.swift */,
+			);
+			path = BankOptions;
+			sourceTree = "<group>";
+		};
 		1C8A329126DBC47600724324 /* Others */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,6 +480,7 @@
 		1CAC8A0926F8D7E300C4749D /* PaymentOrders */ = {
 			isa = PBXGroup;
 			children = (
+				1C82F04527068AC2002C7F56 /* BankOptions */,
 				1CF7A7C327049B2B000066A1 /* BankRegister */,
 				1CAC8A0C26F8D89800C4749D /* PaymentType */,
 				1CAC8A0D26F8DBDD00C4749D /* CreateOrder */,
@@ -968,6 +982,7 @@
 				1CADF5CB26EB07460060A713 /* ForgotPasswordViewState.swift in Sources */,
 				1CAC8A1E26F90FB000C4749D /* LoginModuleDependencies.swift in Sources */,
 				1C6CA7F426F2B643008C71E2 /* RegisterViewModel.swift in Sources */,
+				1C99E3602708C852002C96BD /* BankOptionsTableViewCell.swift in Sources */,
 				1CF704FC26F76B56004C415E /* CreateOrderViewController.swift in Sources */,
 				1C8A329526DBD2C700724324 /* SliderViewModel.swift in Sources */,
 				1C8C642926FA952C00D72CB1 /* DocumentInfoViewModel.swift in Sources */,
@@ -990,6 +1005,7 @@
 				472EB4D826DAF85300937B7E /* BaseViewController.swift in Sources */,
 				1C8A329326DBC48400724324 /* KeyValueStorageKey+Extensions.swift in Sources */,
 				1CAC8A1C26F90C6200C4749D /* ModuleDependencies.swift in Sources */,
+				1C82F04727068AD4002C7F56 /* BankOptionsViewController.swift in Sources */,
 				1CAC8A1A26F90C4100C4749D /* AppDependencies.swift in Sources */,
 				1C7E700226DB0705002E8E72 /* ButtonView.swift in Sources */,
 				1C7E700526DB0741002E8E72 /* NibOwnerLoadable.swift in Sources */,

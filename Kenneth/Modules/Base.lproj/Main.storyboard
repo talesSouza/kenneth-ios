@@ -905,9 +905,12 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xtM-rv-mDB" id="1br-TY-Fri"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="8yE-mz-yZq" firstAttribute="top" secondItem="UbR-Du-JPd" secondAttribute="top" id="IHy-DQ-PPk"/>
                                             <constraint firstAttribute="bottom" secondItem="8yE-mz-yZq" secondAttribute="bottom" id="Qt0-jv-raa"/>
@@ -933,15 +936,25 @@
                                                     <constraint firstAttribute="width" constant="15" id="gq1-Xn-GBZ"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVO-8J-xoh">
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="60"/>
+                                                <connections>
+                                                    <action selector="goToBankOptions:" destination="xtM-rv-mDB" eventType="touchUpInside" id="VX6-cF-WFK"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="oZA-tu-Xwn" firstAttribute="centerX" secondItem="fDa-Pw-SDu" secondAttribute="centerX" id="0Ov-jU-8yC"/>
+                                            <constraint firstItem="FVO-8J-xoh" firstAttribute="top" secondItem="fDa-Pw-SDu" secondAttribute="top" id="4DW-aL-GQp"/>
                                             <constraint firstItem="oZA-tu-Xwn" firstAttribute="top" secondItem="fDa-Pw-SDu" secondAttribute="top" id="8ai-wg-zBa"/>
                                             <constraint firstAttribute="trailing" secondItem="JA0-Yw-PhI" secondAttribute="trailing" constant="24" id="PS2-QO-Apl"/>
                                             <constraint firstAttribute="bottom" secondItem="oZA-tu-Xwn" secondAttribute="bottom" id="XJG-F5-IK1"/>
                                             <constraint firstItem="JA0-Yw-PhI" firstAttribute="centerY" secondItem="fDa-Pw-SDu" secondAttribute="centerY" id="Zfb-Il-X0J"/>
                                             <constraint firstAttribute="height" constant="60" id="c3N-dS-iCW"/>
+                                            <constraint firstAttribute="trailing" secondItem="FVO-8J-xoh" secondAttribute="trailing" id="i7X-Eg-owP"/>
+                                            <constraint firstItem="FVO-8J-xoh" firstAttribute="leading" secondItem="fDa-Pw-SDu" secondAttribute="leading" id="q2k-iX-lRd"/>
+                                            <constraint firstAttribute="bottom" secondItem="FVO-8J-xoh" secondAttribute="bottom" id="vmi-lt-NJr"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-7a-w78" userLabel="agency View">
@@ -954,9 +967,12 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xtM-rv-mDB" id="5yz-aa-rFc"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="MjE-5f-79P" secondAttribute="trailing" id="3El-4l-pdh"/>
                                             <constraint firstAttribute="bottom" secondItem="MjE-5f-79P" secondAttribute="bottom" id="5G3-Zg-XAs"/>
@@ -974,9 +990,12 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="216" height="60"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="xtM-rv-mDB" id="y5d-FN-4Xw"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="216" id="Z5K-iJ-J9o"/>
                                                     <constraint firstItem="BsO-eC-NOk" firstAttribute="leading" secondItem="msP-VQ-WlV" secondAttribute="leading" id="daz-go-alA"/>
@@ -990,9 +1009,12 @@
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Digito" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DOM-Wc-rXD">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="60"/>
-                                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                         <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="xtM-rv-mDB" id="Qho-pD-aju"/>
+                                                        </connections>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1027,9 +1049,12 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="xtM-rv-mDB" id="Nbp-jK-tGS"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstItem="nrA-Hq-6Fz" firstAttribute="top" secondItem="dQf-ko-8wb" secondAttribute="top" id="95H-CL-tni"/>
                                             <constraint firstItem="nrA-Hq-6Fz" firstAttribute="leading" secondItem="dQf-ko-8wb" secondAttribute="leading" id="aoU-k0-caN"/>
@@ -1065,16 +1090,89 @@
                     <connections>
                         <outlet property="accountTextField" destination="BsO-eC-NOk" id="GIK-4h-6kT"/>
                         <outlet property="agencyTextField" destination="MjE-5f-79P" id="y4G-TR-aWe"/>
-                        <outlet property="bankLabelView" destination="oZA-tu-Xwn" id="tEM-wg-szQ"/>
+                        <outlet property="bankNameLabelView" destination="oZA-tu-Xwn" id="tEM-wg-szQ"/>
                         <outlet property="cpfTextField" destination="nrA-Hq-6Fz" id="2Hn-v8-W88"/>
                         <outlet property="digitTextField" destination="DOM-Wc-rXD" id="oyK-yE-k4f"/>
                         <outlet property="registerButtonView" destination="2lD-wh-5ke" id="GiN-i3-ofs"/>
                         <outlet property="tagTextField" destination="8yE-mz-yZq" id="cR4-vG-Uhz"/>
+                        <segue destination="frc-Aj-W83" kind="show" identifier="goToBankOptions" id="hXE-Qf-7Jp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cfZ-gt-YF6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6500" y="611"/>
+            <point key="canvasLocation" x="6500" y="463"/>
+        </scene>
+        <!--Cadastrar Banco-->
+        <scene sceneID="SgJ-K1-scs">
+            <objects>
+                <viewController id="frc-Aj-W83" customClass="BankOptionsViewController" customModule="Kenneth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1LG-lr-x6h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q75-ic-J1e">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="80" id="Ku3-ws-Wml" customClass="BankOptionsTableViewCell" customModule="Kenneth" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ku3-ws-Wml" id="mdF-Xh-ZPf" customClass="BankOptionsTableViewCell" customModule="Kenneth" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMb-zj-igB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-kt-Bes" customClass="LabelView" customModule="Kenneth" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="MiA-kt-Bes" firstAttribute="leading" secondItem="lMb-zj-igB" secondAttribute="leading" id="8n4-7h-d5y"/>
+                                                        <constraint firstAttribute="width" constant="414" id="GI2-7L-w5u"/>
+                                                        <constraint firstItem="MiA-kt-Bes" firstAttribute="top" secondItem="lMb-zj-igB" secondAttribute="top" id="aJt-qw-mWE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="MiA-kt-Bes" secondAttribute="trailing" id="bOR-x5-aOb"/>
+                                                        <constraint firstAttribute="bottom" secondItem="MiA-kt-Bes" secondAttribute="bottom" id="pvr-kz-2Qe"/>
+                                                        <constraint firstAttribute="height" constant="80" id="zwP-rp-IzL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lMb-zj-igB" firstAttribute="centerX" secondItem="mdF-Xh-ZPf" secondAttribute="centerX" id="Xlz-tj-WOg"/>
+                                                <constraint firstItem="lMb-zj-igB" firstAttribute="centerY" secondItem="mdF-Xh-ZPf" secondAttribute="centerY" id="qV7-rD-ptX"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="banksLabelView" destination="MiA-kt-Bes" id="NZL-5R-9We"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="frc-Aj-W83" id="fH9-PP-VaB"/>
+                                    <outlet property="delegate" destination="frc-Aj-W83" id="XKV-wF-xg0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h4L-7X-aPm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Q75-ic-J1e" firstAttribute="leading" secondItem="h4L-7X-aPm" secondAttribute="leading" id="3mV-Mm-6HG"/>
+                            <constraint firstItem="h4L-7X-aPm" firstAttribute="trailing" secondItem="Q75-ic-J1e" secondAttribute="trailing" id="DcE-nq-HUz"/>
+                            <constraint firstItem="h4L-7X-aPm" firstAttribute="bottom" secondItem="Q75-ic-J1e" secondAttribute="bottom" id="QrS-Zu-1CL"/>
+                            <constraint firstItem="Q75-ic-J1e" firstAttribute="top" secondItem="h4L-7X-aPm" secondAttribute="top" id="UCb-Fo-Cj8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cadastrar Banco" id="7gB-o4-A02"/>
+                    <connections>
+                        <outlet property="banksTableView" destination="Q75-ic-J1e" id="089-fq-BWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlA-RU-GPR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7409" y="463"/>
         </scene>
         <!--Justiça Federal-->
         <scene sceneID="czR-kD-E17">
@@ -1224,7 +1322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBu-Uy-xlb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5509" y="-112"/>
+            <point key="canvasLocation" x="5404" y="53"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1h7-on-EAv">
@@ -1454,15 +1552,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWD-X1-ghx" userLabel="dateView">
                                         <rect key="frame" x="0.0" y="160" width="334" height="60"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6F-TL-Xmg" userLabel="validate LabelView" customClass="LabelView" customModule="Kenneth" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="JO6-2l-bf2"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="plh-ai-aUT"/>
-                                                    <constraint firstAttribute="height" constant="60" id="q7U-bd-LMA"/>
-                                                </constraints>
-                                            </view>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-DT-jHh">
                                                 <rect key="frame" x="287" y="22.5" width="15" height="15"/>
                                                 <color key="tintColor" name="Gray"/>
@@ -1471,17 +1560,25 @@
                                                     <constraint firstAttribute="height" constant="15" id="y91-PS-GWm"/>
                                                 </constraints>
                                             </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Validade" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sVY-jb-WaC">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="60"/>
+                                                <color key="backgroundColor" name="GrayLight"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="7qO-Ay-Lr4" id="vd5-Ix-Nfh"/>
+                                                </connections>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="R6F-TL-Xmg" secondAttribute="trailing" id="7vi-Qu-75R"/>
-                                            <constraint firstItem="R6F-TL-Xmg" firstAttribute="centerY" secondItem="iWD-X1-ghx" secondAttribute="centerY" id="9l3-XN-xgA"/>
+                                            <constraint firstAttribute="trailing" secondItem="sVY-jb-WaC" secondAttribute="trailing" id="Ba4-vX-Nc2"/>
                                             <constraint firstAttribute="height" constant="60" id="Ffp-4s-4Bq"/>
-                                            <constraint firstItem="R6F-TL-Xmg" firstAttribute="centerX" secondItem="iWD-X1-ghx" secondAttribute="centerX" id="LLS-ES-g2l"/>
+                                            <constraint firstAttribute="bottom" secondItem="sVY-jb-WaC" secondAttribute="bottom" id="PVP-QD-eGd"/>
                                             <constraint firstItem="Ue8-DT-jHh" firstAttribute="centerY" secondItem="iWD-X1-ghx" secondAttribute="centerY" id="Ps1-kK-Qh6"/>
+                                            <constraint firstItem="sVY-jb-WaC" firstAttribute="top" secondItem="iWD-X1-ghx" secondAttribute="top" id="Wah-Bd-1ua"/>
+                                            <constraint firstItem="sVY-jb-WaC" firstAttribute="leading" secondItem="iWD-X1-ghx" secondAttribute="leading" id="fHg-pp-A3Z"/>
                                             <constraint firstAttribute="trailing" secondItem="Ue8-DT-jHh" secondAttribute="trailing" constant="32" id="nIc-CN-ICA"/>
-                                            <constraint firstItem="R6F-TL-Xmg" firstAttribute="leading" secondItem="iWD-X1-ghx" secondAttribute="leading" id="wuL-AR-bdK"/>
-                                            <constraint firstAttribute="bottom" secondItem="R6F-TL-Xmg" secondAttribute="bottom" id="zwO-TB-ukA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1565,12 +1662,12 @@
                         <outlet property="nameTextField" destination="ShM-03-L9c" id="2zW-Mm-J8r"/>
                         <outlet property="photoImageView" destination="SKu-Wb-lZw" id="O3Y-MG-K2B"/>
                         <outlet property="titleLabelView" destination="d0f-sP-Vdg" id="WBc-xO-kYE"/>
-                        <outlet property="validateLabelView" destination="R6F-TL-Xmg" id="Xbh-2H-57l"/>
+                        <outlet property="validateTextField" destination="sVY-jb-WaC" id="Xcb-tL-ceO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="euM-9z-i1a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7410" y="-257"/>
+            <point key="canvasLocation" x="7409" y="-257"/>
         </scene>
     </scenes>
     <resources>

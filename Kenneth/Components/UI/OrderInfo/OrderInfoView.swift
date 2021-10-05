@@ -17,7 +17,6 @@ class OrderInfoView: UIView, NibOwnerLoadable {
     @IBOutlet private var InfoDescLine1LabelView: LabelView!
     @IBOutlet private var InfoDescLine2LabelView: LabelView!
     @IBOutlet private var leadingIconImageView: UIImageView!
-    
     @IBOutlet private var titleView: UIView!
     @IBOutlet private var filledInfoView: UIView!
     
